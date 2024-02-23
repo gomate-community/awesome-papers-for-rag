@@ -14,7 +14,7 @@ Typically, the rag system consists of a set of modules, where each task are desc
 
 |                                          **Sub-Tasks**                                           | **Input** |     **Output**      |
 | :------------------------------------------------------------------------------------------: | :-------------: | :----------------------: |
-| [query understand](./query_understand.md) |      question      | search queries |
+| [query understanding](./query_understanding.md) |      question      | search queries |
 | [document retrieval](./searcher.md) |    question/queries     |     documents     |
 | [evidence extraction](./compressor.md) |     questions+documents     |         contexts          |
 | [answer generation](./generator.md)   |    question+contexts    |         answer |
