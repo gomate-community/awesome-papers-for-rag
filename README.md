@@ -27,7 +27,7 @@ pip3 install -r requirements.txt
 python3 healthcheck.py
 ```
 
-### Survey Papers for RAG
+### Surveys for RAG
 * The *Organization* column only record the organization of the first author.
 
 | **Date** | **Title** | **Organization**  |  **Code**  |
@@ -38,7 +38,7 @@ python3 healthcheck.py
 |2023/08/14|[Large Language Models for Information Retrieval: A Survey](https://arxiv.org/abs/2308.07107)|Renmin University|[Code](https://github.com/RUC-NLPIR/LLM4IR-Survey)<br>![](https://img.shields.io/github/stars/RUC-NLPIR/LLM4IR-Survey.svg?style=social)|
 
 
-### System Papers for RAG
+### Systems for RAG
 * The *Organization* column only record the organization of the first author.
 
 | **Date** | **Title** | **Organization**  |  **Code**  |
@@ -50,3 +50,12 @@ python3 healthcheck.py
 |2023/06/13|[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](https://arxiv.org/abs/2306.07906)|Tsinghua University|[Code](https://github.com/THUDM/WebGLM)<br>![](https://img.shields.io/github/stars/THUDM/WebGLM.svg?style=social)|
 |2023/05/23|[WebCPM: Interactive Web Search for Chinese Long-form Question Answering](https://arxiv.org/abs/2305.06849)|Tsinghua University|[Code](https://github.com/thunlp/WebCPM)<br>![](https://img.shields.io/github/stars/thunlp/WebCPM.svg?style=social)|
 |2022/06/01|[WebGPT: Browser-assisted question-answering with human feedback](https://arxiv.org/abs/2112.09332)|Open AI|No|
+
+### Evaluations for RAG
+* The *Organization* column only record the organization of the first author.
+
+| **Date** | **Title** | **Organization**  |  **Code**  |
+| :-----------: | :-------------: | :----------------------: |  :----------------------: |
+|2024/02/19|[CRUD-RAG: A Comprehensive Chinese Benchmark for Retrieval-Augmented Generation of Large Language Models](https://arxiv.org/abs/2401.17043)|University of Science and Technology of China|[Code](https://github.com/IAAR-Shanghai/CRUD_RAG)<br>![](https://img.shields.io/github/stars/IAAR-Shanghai/CRUD_RAG.svg?style=social)|
+|2023/11/16|[ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems](https://arxiv.org/abs/2311.09476)|Stanford|[Code](https://github.com/stanford-futuredata/ARES)<br>![](https://img.shields.io/github/stars/stanford-futuredata/ARES.svg?style=social)|
+|2023/09/26|[RAGAS: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217)|Exploding Gradients|[Code](https://github.com/explodinggradients/ragas)<br>![](https://img.shields.io/github/stars/explodinggradients/ragas.svg?style=social)|
