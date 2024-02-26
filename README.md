@@ -61,7 +61,5 @@ python3 healthcheck.py
 |2023/09/26|[RAGAS: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217)|Exploding Gradients|[Code](https://github.com/explodinggradients/ragas)<br>![](https://img.shields.io/github/stars/explodinggradients/ragas.svg?style=social)|
 |2023/12/20|[Benchmarking Large Language Models in Retrieval-Augmented Generation](https://arxiv.org/abs/2309.01431)|Chinese Information Processing Laboratory|[Code](https://github.com/chen700564/RGB)<br>![](https://img.shields.io/github/stars/chen700564/RGB.svg?style=social)|
 |2023/10/31|[Enabling Large Language Models to Generate Text with Citations](https://arxiv.org/abs/2305.14627)|Princeton University|[Code](https://github.com/princeton-nlp/ALCE)<br>![](https://img.shields.io/github/stars/princeton-nlp/ALCE.svg?style=social)|
-|2024/1/30|[RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture](https://arxiv.org/abs/2401.08406)|
-|2024/1/11|[Seven Failure Points When Engineering a Retrieval Augmented Generation System](https://arxiv.org/abs/2401.05856)|Applied Artificial Intelligence Institute
-
-
+|2024/1/30|[RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture](https://arxiv.org/abs/2401.08406)|Microsoft|No|
+|2024/1/11|[Seven Failure Points When Engineering a Retrieval Augmented Generation System](https://arxiv.org/abs/2401.05856)|Applied Artificial Intelligence Institute|No
