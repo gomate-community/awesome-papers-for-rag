@@ -80,8 +80,3 @@ Liang Wang, Nan Yang, Xiaolong Huang, Linjun Yang, Rangan Majumder, Furu Wei* [[
 
 ## 2. Rerank Stage
 
-### 2.1 Sub-title 1
-
-
-- [2023/5/1] **Say Goodbye to Irrelevant Search Results: Cohere Rerank Is Here** *NILS REIMERS, SYLVIE SHI, LUCAS FAYOUX, ELLIOTT CHOI* [[paper](https://txt.cohere.com/rerank)] 
-  - This work propose Cohere Rerank,which can provide a powerful semantic boost to the search quality of any keyword or vector search system without requiring any overhaul or replacement.
