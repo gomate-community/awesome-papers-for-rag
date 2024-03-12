@@ -29,9 +29,9 @@ Coming soon ...
 
 
 
-## 1. Retrieval Stage <a id="retrieval"></>
+## 1. Retrieval Stage <a id="retrieval"></a>
 
-### 1.1 Fine-tuning Embedding Models <a id="tunembedding"></>
+### 1.1 Fine-tuning Embedding Models <a id="tunembedding"></a>
 
 
 
@@ -51,7 +51,7 @@ Coming soon ...
 - [2020/2/1] **REALM: Retrieval-Augmented Language Model Pre-Training** *Kelvin Guu, Kenton Lee, Zora Tung, et. al.* [[paper](https://arxiv.org/abs/2002.08909)] 
   - This work  jointly finetunes the retriever with a sequence-to-sequence model.
 
-### 1.2 Aligning Retriever and LLM <a id="aligning"></>
+### 1.2 Aligning Retriever and LLM <a id="aligning"></a>
 
 
 - [2023/12/16] **UPRISE: Universal Prompt Retrieval for Improving Zero-Shot Evaluation** *Daixuan Cheng, Shaohan Huang, Junyu Bi, et. al.* [[paper](https://arxiv.org/abs/2303.08518)] [[code](https://github.com/microsoft/LMOps), ![](https://img.shields.io/github/stars/microsoft/LMOps.svg?style=social)]
@@ -63,7 +63,7 @@ Coming soon ...
 - [2022/11/16] **Atlas: Few-shot Learning with Retrieval Augmented Language Models** *Gautier Izacard, Patrick Lewis, Maria Lomeli, et. al.* [[paper](https://arxiv.org/abs/2208.03299)] [[code](https://github.com/facebookresearch/atlas), ![](https://img.shields.io/github/stars/facebookresearch/atlas.svg?style=social)]
   - This work present Atlas, a carefully designed and pre-trained retrieval augmented language model able to learn knowledge intensive tasks with very few training examples.
 
-### 1.3 Adpter <a id="adapter"></>
+### 1.3 Adpter <a id="adapter"></a>
 
 - [2022/12/31] **Rethinking with Retrieval: Faithful Large Language Model Inference** *Hangfeng He, Hongming Zhang, Dan Roth* [[paper](https://arxiv.org/abs/2301.00303)] [[code](https://github.com/HornHehhf/RR), ![](https://img.shields.io/github/stars/HornHehhf/RR.svg?style=social)]
   - This work propose a novel post-processing approach, rethinking with retrieval (RR), which retrieves relevant external knowledge based on the decomposed reasoning steps obtained from the chain-of-thought (CoT) prompting.
