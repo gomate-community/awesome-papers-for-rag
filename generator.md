@@ -22,7 +22,7 @@ Coming soon ...
   - [Sub-title 1](#1-sub-rerank)
   - [Sub-title 2](#2-sub-rerank)
 - [Metrics](#metrics)
-  - [Sub-title 1](#1-sub-compressor)
+  - [Claim Verification](#claimverification)
   - [Sub-title 2](#2-sub-compressor)
 
 
@@ -49,7 +49,7 @@ Coming soon ...
 
 ## 3. Metrics <a id="metrics"></a>
 
-### 3.1 Claim Verification
+### 3.1 Claim Verification <a id="claimverification"></a>
 
 - [2024/02/23] **Merging Facts, Crafting Fallacies: Evaluating the Contradictory Nature of Aggregated Factual Claims in Long-Form Generations** *Cheng-Han Chiang, Hung-yi Lee. arXiv.* [[paper](https://arxiv.org/abs/2402.05629#)]
   - This work finds that combining factual claims together can result in a non-factual paragraph due to entity ambiguity. Current metrics for fact verification fail to properly evaluate these non-factual passages. The authors proposed D-FActScore based on FActScore, and showed the methods and results of human and automatic evaluation.  
