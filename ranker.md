@@ -34,14 +34,18 @@ Coming soon ...
 ### 1.1 Fine-tuning Embedding Models <a id="tunembedding"></a>
 
 
-
-
+- [2024/3/29] **Gecko: Versatile Text Embeddings Distilled from Large Language Models** *Jinhyuk Lee, Zhuyun Dai, Xiaoqi Ren, et. al.* [[paper](https://arxiv.org/pdf/2403.20327)] 
+  - This work present **Gecko**, a compact and versatile text embedding modle, which employs a two-stage distillation process by generating data and refining data quality based on large language models.
+- [2024/2/23] **Repetition Improves Language Model Embeddings** *Jacob Mitchell Springer, Suhas Kotha, Daniel Fried, et. al.* [[paper](https://arxiv.org/pdf/2402.15449.pdf), [[code](https://github.com/jakespringer/echo-embeddings), ![](https://img.shields.io/github/stars/jakespringer/echo-embeddings.svg?style=social)] 
+  - This work present "**echo embeddings**", in which they repeat the input twice in context and extract embeddings from the second occurrence (i.e., repetition captures bidirectional information).
+- [2024/2/15] **Generative Representational Instruction Tuning** *Niklas Muennighoff, Hongjin Su, Liang Wang, et. al.* [[paper](https://arxiv.org/abs/2402.09906), [[code](https://github.com/ContextualAI/gritlm), ![](https://img.shields.io/github/stars/ContextualAI/gritlm.svg?style=social)] 
+  - This work introduces generative representational instruction tuning (**GRIT**) whereby a large language model is trained to handle both generative and embedding tasks by distinguishing between them through instructions.
 - [2024/2/10] **BGE M3-Embedding: Multi-Lingual, Multi-Functionality,Multi-Granularity Text Embeddings Through Self-Knowledge Distillation** *Liang Wang, Nan Yang, Xiaolong Huang, et. al.* [[paper](https://arxiv.org/abs/2401.00368)] 
-  - This work present a new embedding model, called M3-Embedding, which is distinguished for its versatility in Multi-Linguality, Multi-Functionality, and Multi-Granularity.
+  - This work present a new embedding model, called **M3-Embedding**, which is distinguished for its versatility in Multi-Linguality, Multi-Functionality, and Multi-Granularity.
 - [2024/1/19] **Improving Text Embeddings with Large Language Models** *Jianlv Chen, Shitao Xiao, Peitian Zhang, et. al.* [[paper](https://arxiv.org/abs/2402.03216)]
   - This work introduce a novel and simple method for obtaining high-quality text embeddings using only synthetic data and less than 1k training steps.
 - [2023/10/25] **Retrieve Anything To Augment Large Language Models** *AutPeitian Zhang, Shitao Xiao, Zheng Liu, et. al. * [[paper](https://arxiv.org/abs/2310.07554)] [[code](https://github.com/FlagOpen/FlagEmbedding), ![](https://img.shields.io/github/stars/FlagOpen/FlagEmbedding.svg?style=social)]
-  - This work present a novel approach, the LLM-Embedder, which comprehensively supports the diverse retrieval augmentation needs of LLMs with one unified embedding model.
+  - This work present a novel approach, the **LLM-Embedder**, which comprehensively supports the diverse retrieval augmentation needs of LLMs with one unified embedding model.
 - [2023/5/30] **One Embedder, Any Task: Instruction-Finetuned Text Embeddings** *Hongjin Su, Weijia Shi, Jungo Kasai, et. al. * [[paper](https://arxiv.org/abs/2212.09741)] [[code](https://github.com/xlang-ai/instructor-embedding), ![](https://img.shields.io/github/stars/xlang-ai/instructor-embedding.svg?style=social)]
   - This work introduce INSTRUCTOR, a new method for computing text embeddings given task instructions: every text input is embedded together with instructions explaining the use case (e.g., task and domain descriptions).
 - [2022/9/23] **Promptagator: Few-shot Dense Retrieval From 8 Examples** *Zhuyun Dai, Vincent Y. Zhao, Ji Ma, et. al. * [[paper](https://arxiv.org/abs/2209.11755)]
