@@ -21,7 +21,7 @@ Coming soon ...
   - [Adapter](#adapter)
   - [Data Sources](#datasources)
 - [Rerank Stage](#rerank)
-  - [Sub-title 1](#1-sub-rerank)
+  - [LLM-based rankers](#llm-based-ranker)
   - [Sub-title 2](#2-sub-rerank)
 
 
@@ -57,7 +57,8 @@ Coming soon ...
 
 ### 1.2 Aligning Retriever and LLM <a id="aligning"></a>
 
-
+- [2023/12/24] **Making Large Language Models A Better Foundation For Dense Retrieval** *Chaofan Li, Zheng Liu, Shitao Xiao, et. al.* [[paper](https://arxiv.org/pdf/2312.15503.pdf)] [[code](https://github.com/FlagOpen/FlagEmbedding), ![](https://img.shields.io/github/stars/FlagOpen/FlagEmbedding.svg?style=social)]
+  - This work includes **LLaRA** (LLM Adapted for dense RetriAl), which works as a post-doc adaptation of LLM for the dense retrieval. It consists of two pretext tasks, EBAE (Embedding-Based Auto-Encoding) and EBAR (Embedding-Based Auto-Regression).
 - [2023/12/16] **UPRISE: Universal Prompt Retrieval for Improving Zero-Shot Evaluation** *Daixuan Cheng, Shaohan Huang, Junyu Bi, et. al.* [[paper](https://arxiv.org/abs/2303.08518)] [[code](https://github.com/microsoft/LMOps), ![](https://img.shields.io/github/stars/microsoft/LMOps.svg?style=social)]
   - This work propose  UPRISE (Universal Prompt Retrieval for Improving zero-Shot Evaluation), which tunes a lightweight and versatile retriever that automatically retrieves prompts for a given zero-shot task input.
 - [2023/5/26] **Augmentation-Adapted Retriever Improves Generalization of Language Models as Generic Plug-In** *Zichun Yu, Chenyan Xiong, Shi Yu, Zhiyuan Liu* [[paper](https://arxiv.org/abs/2305.17331)] [[code](https://github.com/OpenMatch/Augmentation-Adapted-Retriever), ![](https://img.shields.io/github/stars/OpenMatch/Augmentation-Adapted-Retriever.svg?style=social)]
@@ -87,7 +88,9 @@ Coming soon ...
 
 ## 2. Rerank Stage <a id="rerank"></a>
 
-### 2.1 Sub-title 1
+### 2.1 LLM-based rankers <a id="llm-based-ranker"></a>
 
+- [2023/12/5] **Rank-without-GPT: Building GPT-Independent Listwise Rerankers on Open-Source Large Language Models** *Xinyu Zhang, Sebastian Hofstätter, Patrick Lewis, et al.* [[paper](https://arxiv.org/pdf/2312.02969.pdf)] 
+  - This work studies how to construct GPT-free listwise rerankers based on open-source LLM models.
 - [2023/5/1] **Say Goodbye to Irrelevant Search Results: Cohere Rerank Is Here** *NILS REIMERS, SYLVIE SHI, LUCAS FAYOUX, ELLIOTT CHOI* [[paper](https://txt.cohere.com/rerank)] 
   - This work propose Cohere Rerank,which can provide a powerful semantic boost to the search quality of any keyword or vector search system without requiring any overhaul or replacement.
