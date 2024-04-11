@@ -21,7 +21,7 @@ Coming soon ...
   - [Adapter](#adapter)
   - [Data Sources](#datasources)
 - [Rerank Stage](#rerank)
-  - [LLM-based rankers](#llm-based-ranker)
+  - [Adapting LLM as Reranker](#llm-based-ranker)
   - [Sub-title 2](#2-sub-rerank)
 
 
@@ -88,9 +88,11 @@ Coming soon ...
 
 ## 2. Rerank Stage <a id="rerank"></a>
 
-### 2.1 LLM-based rankers <a id="llm-based-ranker"></a>
+### 2.1 Adapting LLM as Reranker <a id="llm-based-ranker"></a>
 
-- [2023/12/5] **Rank-without-GPT: Building GPT-Independent Listwise Rerankers on Open-Source Large Language Models** *Xinyu Zhang, Sebastian Hofstätter, Patrick Lewis, et al.* [[paper](https://arxiv.org/pdf/2312.02969.pdf)] 
+- [2023/12/5] **Rank-without-GPT: Building GPT-Independent Listwise Rerankers on Open-Source Large Language Models** *Xinyu Zhang, Sebastian Hofstätter, Patrick Lewis, et al.* [[paper](https://arxiv.org/pdf/2312.02969.pdf)] [[code](https://huggingface.co/castorini)] 
+  - This work finetunes LLaMA model both as a dense retriever (RepLLaMA) and as a point-wise reranker (RankLLaMA) for both passage retrieval and document retrieval using the MS MARCO datasets.
+- [2023/10/12] **Fine-Tuning LLaMA for Multi-Stage Text Retrieval** *Xueguang Ma, Liang Wang, Nan Yang et al.* [[paper](https://arxiv.org/pdf/2310.08319.pdf)] 
   - This work studies how to construct GPT-free listwise rerankers based on open-source LLM models.
 - [2023/5/1] **Say Goodbye to Irrelevant Search Results: Cohere Rerank Is Here** *NILS REIMERS, SYLVIE SHI, LUCAS FAYOUX, ELLIOTT CHOI* [[paper](https://txt.cohere.com/rerank)] 
   - This work propose Cohere Rerank,which can provide a powerful semantic boost to the search quality of any keyword or vector search system without requiring any overhaul or replacement.

@@ -16,15 +16,15 @@ The retrieved documents often contain a list of passages which are ranked by the
 ## Table of Content (ToC)
 
 
-- [Evidence Selection Method](#selection)
-- [Content Compression Method](#compression)
+- [Selective Methods](#selection)
+- [Abstractive Methods](#compression)
 
 
-## 1. Evidence Selection Method <a id="methods"></a>
+## 1. Selective Methods <a id="methods"></a>
 
 
 
-## 2. Content Compression Method <a id="datasets"></a>
+## 2. Abstractive Methods <a id="datasets"></a>
 
-- [2022/04/12] **RECOMP: Improving Retrieval-Augmented LMs With Compression and Selective Augmentation** *Fangyuan Xu, Weijia Shi, Eunsol Choi1* [[paper](https://arxiv.org/pdf/2310.04408.pdf)] [[code](https://github.com/carriex/recomp), ![](https://img.shields.io/github/stars/carriex/recomp.svg?style=social)]
+- [2023/04/12] **RECOMP: Improving Retrieval-Augmented LMs With Compression and Selective Augmentation** *Fangyuan Xu, Weijia Shi, Eunsol Choi1* [[paper](https://arxiv.org/pdf/2310.04408.pdf)] [[code](https://github.com/carriex/recomp), ![](https://img.shields.io/github/stars/carriex/recomp.svg?style=social)]
   - **Recomp** introduces two types of compressors: an extractive compressor that selects pertinent sentences from retrieved documents, and an abstractive compressor that produces concise summaries by amalgamating information from multiple documents.
