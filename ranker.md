@@ -24,6 +24,8 @@ Coming soon ...
 - [Rerank Stage](#rerank)
   - [Adapting LLM as Reranker](#llm-based-ranker)
   - [Sub-title 2](#2-sub-rerank)
+- [Iterative Retrieval with CoT](#ircot)
+
 
 
 
@@ -53,7 +55,7 @@ Coming soon ...
 
 | Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
 |------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-|2023/12/24|[Making Large Language Models A Better Foundation For Dense Retrieval](https://arxiv.org/pdf/2312.15503.pdf)] <br>[[code](https://github.com/FlagOpen/FlagEmbedding): ![](https://img.shields.io/github/stars/FlagOpen/FlagEmbedding.svg?style=social)| Chaofan Li, Zheng Liu, Shitao Xiao, et. al.|BAAI, BUPT|<small>This work includes **LLaRA** (LLM Adapted for dense RetriAl), which introduce two pretext training tasks EBAE (Embedding-Based Auto-Encoding) and EBAR (Embedding-Based Auto-Regression) to improve LLaMA for dense retrieval.|
+|2023/12/24|[Making Large Language Models A Better Foundation For Dense Retrieval](https://arxiv.org/pdf/2312.15503.pdf)] <br>[[code](https://github.com/FlagOpen/FlagEmbedding): ![](https://img.shields.io/github/stars/FlagOpen/FlagEmbedding.svg?style=social)]| Chaofan Li, Zheng Liu, Shitao Xiao, et. al.|BAAI, BUPT|<small>This work includes **LLaRA** (LLM Adapted for dense RetriAl), which introduce two pretext training tasks EBAE (Embedding-Based Auto-Encoding) and EBAR (Embedding-Based Auto-Regression) to improve LLaMA for dense retrieval.|
 
 
 <!--
@@ -72,9 +74,6 @@ Coming soon ...
 ### 1.4 Adpter <a id="adapter"></a>
 
 
-
-- [2023/6/22] **Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions** *Harsh Trivedi, Niranjan Balasubramanian, Tushar Khot, Ashish Sabharwal* [[paper](https://arxiv.org/abs/2212.10509)] [[code](https://github.com/stonybrooknlp/ircot), ![](https://img.shields.io/github/stars/stonybrooknlp/ircot.svg?style=social)]
-  - This work propose IRCoT, a new approach for multi-step QA that interleaves retrieval with steps (sentences) in a CoT, guiding the retrieval with CoT and in turn using retrieved results to improve CoT.
 - [2023/10/8] **Retrieval-Generation Synergy Augmented Large Language Models** *Zhangyin Feng, Xiaocheng Feng, Dezhi Zhao, Maojin Yang, Bing Qin* [[paper](https://arxiv.org/abs/2310.05149)] 
   - This work present ITRG, which is an iterative retrieval-generation synergy framework, containing two important steps: generation-augmented retrieval and retrieval-augmented generation. They form a closed loop, and can improve each other via multiple iterations.
 
@@ -93,3 +92,11 @@ Coming soon ...
 |2023/12/5 | [Rank-without-GPT: Building GPT-Independent Listwise Rerankers on Open-Source Large Language Models](https://arxiv.org/pdf/2312.02969.pdf)] [[code](https://huggingface.co/castorini)] | Xinyu Zhang, Sebastian Hofstätter, Patrick Lewis, et al.|University of Waterloo, Cohere, Comcast Applied AI|<small>This work finetunes LLaMA model both as a dense retriever (RepLLaMA) and as a point-wise reranker (RankLLaMA) for both passage retrieval and document retrieval using the MS MARCO datasets.</small>|
 |2023/10/12 | [Fine-Tuning LLaMA for Multi-Stage Text Retrieval](https://arxiv.org/pdf/2310.08319.pdf)| Xueguang Ma, Liang Wang, Nan Yang et al.|David R. Cheriton School of Computer Science, University of Waterloo, Microsoft Research|<small>This work studies how to construct GPT-free listwise rerankers based on open-source LLM models</small>|
 |2023/5/1| [Say Goodbye to Irrelevant Search Results: Cohere Rerank Is Here](https://txt.cohere.com/rerank)| NILS REIMERS, SYLVIE SHI, LUCAS FAYOUX, ELLIOTT CHOI| Cohere| <small>This work propose Cohere Rerank,which can provide a powerful semantic boost to the search quality of any keyword or vector search system without requiring any overhaul or replacement.</small>|
+
+
+
+## 3. Iterative Retrieval with CoT <a id="ircot"></a>
+
+| Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
+|------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+|2023/6/22 | [Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions](https://arxiv.org/abs/2212.10509)] <br>[[code](https://github.com/stonybrooknlp/ircot): ![](https://img.shields.io/github/stars/stonybrooknlp/ircot.svg?style=social)] | Harsh Trivedi, Niranjan Balasubramanian, Tushar Khot, Ashish Sabharwal| Stony Brook University, Allen Institute for AI| <small>This work propose **IRCoT**, which interleaves CoT generation and retrieval steps to guid the retrieval by CoT and vice-versa. Two steps: 1) reason step generates next CoT sentence based on question, retrieved passage, and CoT sentences; 2) retrieval step retrieves K more passages based on the last CoT sentence.</small>|
