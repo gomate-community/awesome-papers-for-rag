@@ -72,8 +72,7 @@ Coming soon ...
 ### 1.4 Adpter <a id="adapter"></a>
 
 
-- [2023/5/18] **Augmented Large Language Models with Parametric Knowledge Guiding** *Ziyang Luo, Can Xu, Pu Zhao, Xiubo Geng, Chongyang Tao, Jing Ma, Qingwei Lin, Daxin Jiang* [[paper](https://arxiv.org/abs/2305.04757)] 
-  - This work propose the novel Parametric Knowledge Guiding (PKG) framework, which equips LLMs with a knowledge-guiding module to access relevant knowledge without altering the LLMs' parameters.
+
 - [2023/6/22] **Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions** *Harsh Trivedi, Niranjan Balasubramanian, Tushar Khot, Ashish Sabharwal* [[paper](https://arxiv.org/abs/2212.10509)] [[code](https://github.com/stonybrooknlp/ircot), ![](https://img.shields.io/github/stars/stonybrooknlp/ircot.svg?style=social)]
   - This work propose IRCoT, a new approach for multi-step QA that interleaves retrieval with steps (sentences) in a CoT, guiding the retrieval with CoT and in turn using retrieved results to improve CoT.
 - [2023/10/8] **Retrieval-Generation Synergy Augmented Large Language Models** *Zhangyin Feng, Xiaocheng Feng, Dezhi Zhao, Maojin Yang, Bing Qin* [[paper](https://arxiv.org/abs/2310.05149)] 
