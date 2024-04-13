@@ -19,12 +19,13 @@ Coming soon ...
   - [Tuning Embeddings](#tunembedding)
   - [Adapting LLM as Retriever](#aligning)
   - [LLM-guided Retriever](#llm-guided-retriever)
-  - [Adapter](#adapter)
   - [Data Sources](#datasources)
 - [Rerank Stage](#rerank)
   - [Adapting LLM as Reranker](#llm-based-ranker)
   - [Sub-title 2](#2-sub-rerank)
-- [Iterative Retrieval with CoT](#ircot)
+- [Iterative Retrieval and Generation](#iterir)
+  - [Iterative Retrieval-Generation](#iterir_direct)
+  - [IterIR with CoT](#iterir_cot)
 
 
 
@@ -71,13 +72,7 @@ Coming soon ...
 |2022/11/16| [Atlas: Few-shot Learning with Retrieval Augmented Language Models](https://arxiv.org/abs/2208.03299.pdf)] [[code](https://github.com/facebookresearch/atlas): ![](https://img.shields.io/github/stars/facebookresearch/atlas.svg?style=social)]|Gautier Izacard, Patrick Lewis, Maria Lomeli, et. al.|Meta AI, ENS, PSL University, Inria, UCL|<small>This work present Atlas, a retrieval (Contriever) augmented language model (T5) by carefully designed training, i.e., 1) jointly pre-train the retriever and LLM using unsupervised output, 2) efficient retriever fine-tuning (including full index update, reranking, and query-side fine-tuning).</small>|
 
 
-### 1.4 Adpter <a id="adapter"></a>
-
-
-- [2023/10/8] **Retrieval-Generation Synergy Augmented Large Language Models** *Zhangyin Feng, Xiaocheng Feng, Dezhi Zhao, Maojin Yang, Bing Qin* [[paper](https://arxiv.org/abs/2310.05149)] 
-  - This work present ITRG, which is an iterative retrieval-generation synergy framework, containing two important steps: generation-augmented retrieval and retrieval-augmented generation. They form a closed loop, and can improve each other via multiple iterations.
-
-### 1.5 Data Sources <a id="datasources"></a>
+### 1.4 Data Sources <a id="datasources"></a>
 
 - [2023/10/8] **Self-Knowledge Guided Retrieval Augmentation for Large Language Models** *Yile Wang, Peng Li, Maosong Sun, Yang Liu* [[paper](https://arxiv.org/abs/2310.05002)] 
   - This work nvestigate eliciting the model's ability to recognize what they know and do not know (which is also called self-knowledge) and propose Self-Knowledge guided Retrieval augmentation (SKR), a simple yet effective method which can let LLMs refer to the questions they have previously encountered and adaptively call for external resources when dealing with new questions.
@@ -89,14 +84,21 @@ Coming soon ...
 ### 2.1 Adapting LLM as Reranker <a id="llm-based-ranker"></a>
 | Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
 |------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-|2023/12/5 | [Rank-without-GPT: Building GPT-Independent Listwise Rerankers on Open-Source Large Language Models](https://arxiv.org/pdf/2312.02969.pdf)] [[code](https://huggingface.co/castorini)] | Xinyu Zhang, Sebastian Hofstätter, Patrick Lewis, et al.|University of Waterloo, Cohere, Comcast Applied AI|<small>This work finetunes LLaMA model both as a dense retriever (RepLLaMA) and as a point-wise reranker (RankLLaMA) for both passage retrieval and document retrieval using the MS MARCO datasets.</small>|
+|2024/03/28 | [Large Language Models are Effective Text Rankers with Pairwise Ranking Prompting](https://arxiv.org/pdf/2306.17563.pdf) | Zhen Qin, Rolf Jagerman, Kai Hui, et al.|Google Research|<small>This work introduces Pairwise Ranking Prompting (PRP) for ranking with LLMs. Three variant of PRP: 1) all pair comparisons $O(N^2)$, 2) Sorting-based, i.e., Heapsort, $O(N\times \log(N))$, 3) Sliding window, i.e., Bubble Sort for Top-K, $O(N)$.</small>|
+|2023/12/5 | [Rank-without-GPT: Building GPT-Independent Listwise Rerankers on Open-Source Large Language Models](https://arxiv.org/pdf/2312.02969.pdf)][[code](https://huggingface.co/castorini)] | Xinyu Zhang, Sebastian Hofstätter, Patrick Lewis, et al.|University of Waterloo, Cohere, Comcast Applied AI|<small>This work finetunes LLaMA model both as a dense retriever (RepLLaMA) and as a point-wise reranker (RankLLaMA) for both passage retrieval and document retrieval using the MS MARCO datasets.</small>|
+|2023/10/27 | [Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agents](https://arxiv.org/pdf/2304.09542.pdf)]<br>[[code](https://github.com/sunnweiwei/RankGPT): ![](https://img.shields.io/github/stars/sunnweiwei/RankGPT.svg?style=social))] | Weiwei Sun, Lingyong Yan, Xinyu Ma, et al.|Shandong University, Baidu Inc. |<small>This work introduces *intructional permutation generation with a sliding window strategy* to investigate the ability of black-box LLMs (ChatGPT and GPT-4) in reranking. It also distill the ranking result of ChatGPT into a small ranker using permutation distillation.</small>|
 |2023/10/12 | [Fine-Tuning LLaMA for Multi-Stage Text Retrieval](https://arxiv.org/pdf/2310.08319.pdf)| Xueguang Ma, Liang Wang, Nan Yang et al.|David R. Cheriton School of Computer Science, University of Waterloo, Microsoft Research|<small>This work studies how to construct GPT-free listwise rerankers based on open-source LLM models</small>|
 |2023/5/1| [Say Goodbye to Irrelevant Search Results: Cohere Rerank Is Here](https://txt.cohere.com/rerank)| NILS REIMERS, SYLVIE SHI, LUCAS FAYOUX, ELLIOTT CHOI| Cohere| <small>This work propose Cohere Rerank,which can provide a powerful semantic boost to the search quality of any keyword or vector search system without requiring any overhaul or replacement.</small>|
 
 
 
-## 3. Iterative Retrieval with CoT <a id="ircot"></a>
+## 3. Iterative Retrieval and Generation <a id="iterir"></a>
+### 3.1 Iterative Retrieval-Generation <a id="iterir_direct"></a>
+| Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
+|------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+|2023/10/08 | [Retrieval-Generation Synergy Augmented Large Language Models](https://arxiv.org/pdf/2310.05149.pdf)] | Zhangyin Feng, Xiaocheng Feng, Dezhi Zhao, Maojin Yang, Bing Qin| Harbin Institute of Technology| <small>This work propose **ITRG**, which contains two steps: 1) generation augmented retrieval (GAR) to expand the query based on previous iteration to help retrieve, 2) retrieval augmented generation (RAG) to generate new document to answer questions based on retrieved documents.</small>|
 
+### 3.2 IterIR with CoT<a id="iterir_cot"></a>
 | Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
 |------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 |2023/6/22 | [Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions](https://arxiv.org/abs/2212.10509)] <br>[[code](https://github.com/stonybrooknlp/ircot): ![](https://img.shields.io/github/stars/stonybrooknlp/ircot.svg?style=social)] | Harsh Trivedi, Niranjan Balasubramanian, Tushar Khot, Ashish Sabharwal| Stony Brook University, Allen Institute for AI| <small>This work propose **IRCoT**, which interleaves CoT generation and retrieval steps to guid the retrieval by CoT and vice-versa. Two steps: 1) reason step generates next CoT sentence based on question, retrieved passage, and CoT sentences; 2) retrieval step retrieves K more passages based on the last CoT sentence.</small>|
