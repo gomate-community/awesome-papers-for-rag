@@ -18,7 +18,7 @@ Typically, the rag system consists of a set of modules, where each task are desc
 | [document retrieval](./ranker.md) |    question/queries     |     documents     |
 | [evidence extraction](./compressor.md) |     questions+documents     |         contexts          |
 | [answer generation](./generator.md)   |    question+contexts    |         answer |
-| [result validation](./validator.md)   |    question+answer+contexts    |     True/False  |
+| [result enhancement](./validator.md)   |    question+answer+contexts    |     answer  |
 
 ### Healthcheck
 
