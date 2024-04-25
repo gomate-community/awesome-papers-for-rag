@@ -22,7 +22,6 @@ Coming soon ...
   - [Data Sources](#datasources)
 - [Rerank Stage](#rerank)
   - [Adapting LLM as Reranker](#llm-based-ranker)
-  - [Sub-title 2](#2-sub-rerank)
 - [Iterative Retrieval and Generation](#iterir)
   - [Iterative Retrieval-Generation](#iterir_direct)
   - [IterIR with CoT](#iterir_cot)
