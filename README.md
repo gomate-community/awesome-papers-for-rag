@@ -58,6 +58,9 @@ python3 healthcheck.py
 
 | **Date** | **Title** | **Organization**  |  **Code**  |
 | :-----------: | :-------------: | :----------------------: |  :----------------------: |
+|2024/05/13|[Evaluation of Retrieval-Augmented Generation: A Survey](https://arxiv.org/pdf/2405.07437)|Tencent|[Code](https://github.com/vasiliskatr/faaf)<br>![](https://img.shields.io/github/stars/YHPeter/Awesome-RAG-Evaluation.svg?style=social)|
+|2024/04/21|[Evaluating Retrieval Quality in Retrieval-Augmented Generation](https://arxiv.org/pdf/2404.13781)|UMASS|No|
+|2024/04/08|[FaaF: Facts as a Function for the evaluation of generated text](https://arxiv.org/pdf/2403.03888)|IMMO Capital|[Code](https://github.com/vasiliskatr/faaf)<br>![](https://img.shields.io/github/stars/vasiliskatr/faaf.svg?style=social)|
 |2024/02/19|[CRUD-RAG: A Comprehensive Chinese Benchmark for Retrieval-Augmented Generation of Large Language Models](https://arxiv.org/abs/2401.17043)|University of Science and Technology of China|[Code](https://github.com/IAAR-Shanghai/CRUD_RAG)<br>![](https://img.shields.io/github/stars/IAAR-Shanghai/CRUD_RAG.svg?style=social)|
 |2024/1/30|[RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture](https://arxiv.org/abs/2401.08406)|Microsoft|No|
 |2024/1/11|[Seven Failure Points When Engineering a Retrieval Augmented Generation System](https://arxiv.org/abs/2401.05856)|Applied Artificial Intelligence Institute|No
