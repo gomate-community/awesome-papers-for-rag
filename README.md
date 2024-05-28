@@ -58,6 +58,7 @@ python3 healthcheck.py
 
 | **Date** | **Title** | **Organization**  |  **Code**  |
 | :-----------: | :-------------: | :----------------------: |  :----------------------: |
+|2024/05/22|[FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/pdf/2405.13576)|Renmin University of China|[Code](https://github.com/RUC-NLPIR/FlashRAG)<br>![](https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG.svg?style=social)|
 |2024/05/13|[Evaluation of Retrieval-Augmented Generation: A Survey](https://arxiv.org/pdf/2405.07437)|Tencent|[Code](https://github.com/vasiliskatr/faaf)<br>![](https://img.shields.io/github/stars/YHPeter/Awesome-RAG-Evaluation.svg?style=social)|
 |2024/04/21|[Evaluating Retrieval Quality in Retrieval-Augmented Generation](https://arxiv.org/pdf/2404.13781)|UMASS|No|
 |2024/04/08|[FaaF: Facts as a Function for the evaluation of generated text](https://arxiv.org/pdf/2403.03888)|IMMO Capital|[Code](https://github.com/vasiliskatr/faaf)<br>![](https://img.shields.io/github/stars/vasiliskatr/faaf.svg?style=social)|
