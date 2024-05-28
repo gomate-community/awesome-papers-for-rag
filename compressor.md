@@ -21,6 +21,9 @@ The retrieved documents often contain a list of passages which are ranked by the
 
 
 ## 1. Selective Methods <a id="methods"></a>
+| Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
+|------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+|2024/03/21| [FIT-RAG: Black-Box RAG with Factual Information and Token Reduction](https://arxiv.org/pdf/2403.14374) |Yuren Mao, Xuemei Dong, Wenyi Xu, et al. |Zhejiang University |<small>**FIT-RAG** utilizes the factual information in the retrieval and reduces the number of tokens for augmentation. It consists of five components: a similarity-based retriever, a bi-label document scorer, a bi-faceted self-knowledge recognizer, a sub-document-level token reducer and a prompt construction module.</small>|
 
 
 
