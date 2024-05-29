@@ -73,8 +73,12 @@ Coming soon ...
 
 ### 1.4 Data Sources <a id="datasources"></a>
 
-- [2023/10/8] **Self-Knowledge Guided Retrieval Augmentation for Large Language Models** *Yile Wang, Peng Li, Maosong Sun, Yang Liu* [[paper](https://arxiv.org/abs/2310.05002)] 
-  - This work nvestigate eliciting the model's ability to recognize what they know and do not know (which is also called self-knowledge) and propose Self-Knowledge guided Retrieval augmentation (SKR), a simple yet effective method which can let LLMs refer to the questions they have previously encountered and adaptively call for external resources when dealing with new questions.
+
+| Date       | Title  | Authors  | Orgnization  | Abs |
+|------------|-----------------------|------------------------------------------|---------------------|--------------|
+|2024/01/31|RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval|Parth Sarthi, Salman Abdullah, Aditi Tuli, Shubh Khanna, Anna Goldie, Christopher D. Manning|Stanford|<small>We introduce the novel approach of recursively embedding, clustering, and summarizing chunks of text, constructing a tree with differing levels of summarization from the bottom up. At inference time, our RAPTOR model retrieves from this tree, integrating information across lengthy documents at different levels of abstraction.  On question-answering tasks that involve complex, multi-step reasoning, we show state-of-the-art results; for example, by coupling RAPTOR retrieval with the use of GPT-4, we can improve the best performance on the QuALITY benchmark by 20% in absolute accuracy.</small>|
+|2023/10/8| Self-Knowledge Guided Retrieval Augmentation for Large Language Models |Yile Wang, Peng Li, Maosong Sun, Yang Liu| Tsinghua University|<small>This work nvestigate eliciting the model's ability to recognize what they know and do not know (which is also called self-knowledge) and propose Self-Knowledge guided Retrieval augmentation (SKR), a simple yet effective method which can let LLMs refer to the questions they have previously encountered and adaptively call for external resources when dealing with new questions.</small>|
+
 
 
 
