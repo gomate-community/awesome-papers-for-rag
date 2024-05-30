@@ -16,8 +16,10 @@ The retrieved documents often contain a list of passages which are ranked by the
 ## Table of Content (ToC)
 
 
-- [Selective Methods](#selection) Selective Methods aims to select a subset of tokens from original contexts. 
-- [Abstractive Methods](#abstractive) Abstractive Methods usually compress contexts by generating summarys.
+- [Selective Methods](#selection) 
+Selective Methods aims to select a subset of tokens from original contexts. 
+- [Abstractive Methods](#abstractive) 
+Abstractive Methods usually compress contexts by generating summarys.
 
 
 ## 1. Selective Methods <a id="methods"></a>
