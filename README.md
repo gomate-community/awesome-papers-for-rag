@@ -44,7 +44,10 @@ python3 healthcheck.py
 * The *Organization* column only record the organization of the first author.
 
 | **Date** | **Title** | **Organization**  |  **Code**  |
-| :-----------: | :-------------: | :----------------------: |  :----------------------: |
+| :-----------: | :-------------: | :----------------------: |  :----------------------: 
+|2024/08/21|[RAGLAB: A Modular and Research-Oriented Unified Framework for Retrieval-Augmented Generation](https://arxiv.org/abs/2408.11381)|Nanjing University|[Code](https://github.com/fate-ubw/RAGLab)<br>![](https://img.shields.io/github/stars/fate-ubw/RAGLab.svg?style=social)|
+|2024/06/19|[InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales](https://arxiv.org/abs/2406.13629)|University of Virginia|[Code](https://github.com/weizhepei/InstructRAG)<br>![](https://img.shields.io/github/stars/weizhepei/InstructRAG.svg?style=social)|
+|2024/05/22|[FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/pdf/2405.13576)|Renmin University of China|[Code](https://github.com/RUC-NLPIR/FlashRAG)<br>![](https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG.svg?style=social)|
 |2023/11/22|[FreshLLMs: Refreshing Large Language Models with Search Engine Augmentation](https://arxiv.org/abs/2310.03214)|Google|[Code](https://github.com/freshllms/freshqa)<br>![](https://img.shields.io/github/stars/freshllms/freshqa.svg?style=social)|
 |2023/11/08|[PDFTriage: Question Answering over Long, Structured Documents](https://arxiv.org/abs/2309.08872)|Stanford|[Code](https://github.com/HAMNET-AI/PDFTriage)<br>![](https://img.shields.io/github/stars/HAMNET-AI/PDFTriage.svg?style=social)|
 |2023/10/27|[WikiChat: Stopping the Hallucination of Large Language Model Chatbots by Few-Shot Grounding on Wikipedia](https://arxiv.org/pdf/2305.14292v2.pdf)|Stanford|[Code](https://github.com/stanford-oval/WikiChat)<br>![](https://img.shields.io/github/stars/stanford-oval/WikiChat.svg?style=social)|
@@ -58,7 +61,6 @@ python3 healthcheck.py
 
 | **Date** | **Title** | **Organization**  |  **Code**  |
 | :-----------: | :-------------: | :----------------------: |  :----------------------: |
-|2024/05/22|[FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/pdf/2405.13576)|Renmin University of China|[Code](https://github.com/RUC-NLPIR/FlashRAG)<br>![](https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG.svg?style=social)|
 |2024/05/13|[Evaluation of Retrieval-Augmented Generation: A Survey](https://arxiv.org/pdf/2405.07437)|Tencent|[Code](https://github.com/vasiliskatr/faaf)<br>![](https://img.shields.io/github/stars/YHPeter/Awesome-RAG-Evaluation.svg?style=social)|
 |2024/04/21|[Evaluating Retrieval Quality in Retrieval-Augmented Generation](https://arxiv.org/pdf/2404.13781)|UMASS|No|
 |2024/04/08|[FaaF: Facts as a Function for the evaluation of generated text](https://arxiv.org/pdf/2403.03888)|IMMO Capital|[Code](https://github.com/vasiliskatr/faaf)<br>![](https://img.shields.io/github/stars/vasiliskatr/faaf.svg?style=social)|
