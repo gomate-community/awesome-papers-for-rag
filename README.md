@@ -45,6 +45,7 @@ python3 healthcheck.py
 
 | **Date** | **Title** | **Organization**  |  **Code**  |
 | :-----------: | :-------------: | :----------------------: |  :----------------------: 
+|2024/10/25|[StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization](https://arxiv.org/abs/2410.08815)|ISCAS|[Code](https://github.com/Li-Z-Q/StructRAG)<br>![](https://img.shields.io/github/stars/Li-Z-Q/StructRAG.svg?style=social)|
 |2024/08/21|[RAGLAB: A Modular and Research-Oriented Unified Framework for Retrieval-Augmented Generation](https://arxiv.org/abs/2408.11381)|Nanjing University|[Code](https://github.com/fate-ubw/RAGLab)<br>![](https://img.shields.io/github/stars/fate-ubw/RAGLab.svg?style=social)|
 |2024/06/19|[InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales](https://arxiv.org/abs/2406.13629)|University of Virginia|[Code](https://github.com/weizhepei/InstructRAG)<br>![](https://img.shields.io/github/stars/weizhepei/InstructRAG.svg?style=social)|
 |2024/05/22|[FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research](https://arxiv.org/pdf/2405.13576)|Renmin University of China|[Code](https://github.com/RUC-NLPIR/FlashRAG)<br>![](https://img.shields.io/github/stars/RUC-NLPIR/FlashRAG.svg?style=social)|
@@ -61,6 +62,7 @@ python3 healthcheck.py
 
 | **Date** | **Title** | **Organization**  |  **Code**  |
 | :-----------: | :-------------: | :----------------------: |  :----------------------: |
+|2024/10/10|[HELMET: How to Evaluate Long-Context Language Models Effectively and Thoroughly](https://arxiv.org/pdf/2410.02694?)|Princeton|[Code](https://github.com/princeton-nlp/HELMET)<br>![](https://img.shields.io/github/stars/princeton-nlp/HELMET.svg?style=social)|
 |2024/05/13|[Evaluation of Retrieval-Augmented Generation: A Survey](https://arxiv.org/pdf/2405.07437)|Tencent|[Code](https://github.com/vasiliskatr/faaf)<br>![](https://img.shields.io/github/stars/YHPeter/Awesome-RAG-Evaluation.svg?style=social)|
 |2024/04/21|[Evaluating Retrieval Quality in Retrieval-Augmented Generation](https://arxiv.org/pdf/2404.13781)|UMASS|No|
 |2024/04/08|[FaaF: Facts as a Function for the evaluation of generated text](https://arxiv.org/pdf/2403.03888)|IMMO Capital|[Code](https://github.com/vasiliskatr/faaf)<br>![](https://img.shields.io/github/stars/vasiliskatr/faaf.svg?style=social)|
