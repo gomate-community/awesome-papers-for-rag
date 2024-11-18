@@ -21,6 +21,12 @@ The intent understanding component is to understand the question, and guide the 
 
 
 
+<style scoped>
+table {
+  font-size: 13px;
+}
+</style>
+
 ## 1. Retrieval Detection <a id="retrieval_detect"></a>
 
 | Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
