@@ -23,52 +23,11 @@ The intent understanding component is to understand the question, and guide the 
 
 ## 1. Retrieval Detection <a id="retrieval_detect"></a>
 
-<table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th style="width: 10%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">Date</th>
-      <th style="width: 25%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">Title</th>
-      <th style="width: 20%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">Authors</th>
-      <th style="width: 20%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">Organization</th>
-      <th style="width: 25%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">Abstract</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">2024/05/04</td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">
-        <a href="https://arxiv.org/pdf/2404.19705">When to Retrieve: Teaching LLMs to Utilize Information Retrieval Effectively</a>
-        <br><a href="https://github.com/mwozgpt/Adapt-LLM-anonymous-old"><img src="https://img.shields.io/github/stars/mwozgpt/Adapt-LLM-anonymous-old.svg?style=social"></a>
-      </td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">Tiziano Labruna, et al.</td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">University of Bozen-Bolzano</td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">
-        This paper presents ADAPT-LLM by fine-tuning a base LLM on an open-domain QA dataset. It first take base LLM to zero-shot evaluation to determin its accuracy in QA. For questions with incorrect answers, it train the LLM to generate a spectial token <RET>, indicating the need for additional context.
-      </td>
-    </tr>
-    <tr>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">2024/02/15</td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">
-        <a href="https://arxiv.org/abs/2402.09760">Grounding Language Model with Chunking-Free In-Context Retrieval</a>
-      </td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">Hongjin Qian, et al.</td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">Gaoling School of Artificial Intelligence, Renmin University of China</td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">
-        This paper presents a novel Chunking-Free In-Context (CFIC) retrieval approach, specifically tailored for Retrieval-Augmented Generation (RAG) systems. CFIC addresses these challenges by circumventing the conventional chunking process. It utilizes the encoded hidden states of documents for in-context retrieval, employing auto-aggressive decoding to accurately identify the specific evidence text required for user queries, eliminating the need for chunking. CFIC is further enhanced by incorporating two decoding strategies, namely Constrained Sentence Prefix Decoding and Skip Decoding. These strategies not only improve the efficiency of the retrieval process but also ensure that the fidelity of the generated grounding text evidence is maintained.      </td>
-    </tr>
-    <tr>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">2023/10/08</td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">
-        <a href="https://arxiv.org/pdf/2310.05002.pdf">Self-Knowledge Guided Retrieval Augmentation for Large Language Models</a>
-      </td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">Yile Wang, Peng Li, Maosong Sun, Yang Liu</td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">Tsinghua University</td>
-      <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; border: 1px solid #ddd;">
-       This work introduces Self-Knowledge guided Retrieval augmentation*SKR* to flexibly call the retriever. Three steps: 1) collection self-knowledge of LLM by asking a number of questions, and divide the question into two categories D+ and D- according to the answer correctness, 2) eliciting self-knowledge of LLMs by either direct prompt or training a classifier based on D+ and D-, 3) using self-knowledge for adaptive retrieval augmentation based on prediction of 2).
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
+|------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+|2024/05/04| [When to Retrieve: Teaching LLMs to Utilize Information Retrieval Effectively](https://arxiv.org/pdf/2404.19705) <br>[[code](https://github.com/mwozgpt/Adapt-LLM-anonymous-old): ![](https://img.shields.io/github/stars/mwozgpt/Adapt-LLM-anonymous-old.svg?style=social)] | Tiziano Labruna, et al. | University of Bozen-Bolzano | <details><summary><small>This paper presents ADAPT-LLM by fine-tuning a base LLM on an open-domain QA dataset</small></summary><small>This paper presents ADAPT-LLM by fine-tuning a base LLM on an open-domain QA dataset. It first take base LLM to zero-shot evaluation to determin its accuracy in QA. For questions with incorrect answers, it train the LLM to generate a spectial token <RET>, indicating the need for additional context.</small></details>|
+|2024/02/15| [Grounding Language Model with Chunking-Free In-Context Retrieval](https://arxiv.org/abs/2402.09760) | Hongjin Qian, et al. | Gaoling School of Artificial Intelligence, Renmin University of China, | <details><small>This paper presents a novel Chunking-Free In-Context (CFIC) retrieval approach, specifically tailored for Retrieval-Augmented Generation (RAG) systems. CFIC addresses these challenges by circumventing the conventional chunking process. It utilizes the encoded hidden states of documents for in-context retrieval, employing auto-aggressive decoding to accurately identify the specific evidence text required for user queries, eliminating the need for chunking. CFIC is further enhanced by incorporating two decoding strategies, namely Constrained Sentence Prefix Decoding and Skip Decoding. These strategies not only improve the efficiency of the retrieval process but also ensure that the fidelity of the generated grounding text evidence is maintained.</small></details>|
+|2023/10/08| [Self-Knowledge Guided Retrieval Augmentation for Large Language Models](https://arxiv.org/pdf/2310.05002.pdf) |Yile Wang, Peng Li, Maosong Sun, Yang Liu|Tsinghua University| <details><small>This work introduces Self-Knowledge guided Retrieval augmentation*SKR* to flexibly call the retriever. Three steps: 1) collection self-knowledge of LLM by asking a number of questions, and divide the question into two categories D+ and D- according to the answer correctness, 2) eliciting self-knowledge of LLMs by either direct prompt or training a classifier based on D+ and D-, 3) using self-knowledge for adaptive retrieval augmentation based on prediction of 2).</small></details>|
 
 
 ## 2. Query Reformulation <a id="query_reformulate"></a>
