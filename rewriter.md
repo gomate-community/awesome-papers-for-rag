@@ -23,10 +23,6 @@ The intent understanding component is to understand the question, and guide the 
 
 ## 1. Retrieval Detection <a id="retrieval_detect"></a>
 
-<style scoped>
-table {  font-size: 13px; }
-</style>
-
 | Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
 |------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 |2024/05/04| [When to Retrieve: Teaching LLMs to Utilize Information Retrieval Effectively](https://arxiv.org/pdf/2404.19705) <br>[[code](https://github.com/mwozgpt/Adapt-LLM-anonymous-old): ![](https://img.shields.io/github/stars/mwozgpt/Adapt-LLM-anonymous-old.svg?style=social)] | Tiziano Labruna, et al. | University of Bozen-Bolzano | <details><summary><small>This paper presents ADAPT-LLM ...</small></summary><small>This paper presents ADAPT-LLM by fine-tuning a base LLM on an open-domain QA dataset. It first take base LLM to zero-shot evaluation to determin its accuracy in QA. For questions with incorrect answers, it train the LLM to generate a spectial token <RET>, indicating the need for additional context.</small></details>|
