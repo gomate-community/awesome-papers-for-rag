@@ -1,3 +1,7 @@
+<style scoped>
+table {  font-size: 13px; }
+</style>
+
 # Awesome resources about intent understanding component in the RAG system
 
 🔥 **Must-read papers for intent understanding component in RAG.**
@@ -19,11 +23,6 @@ The intent understanding component is to understand the question, and guide the 
   - [Pseudo-Relevant Feedback](#PRF)
   - [Methods Combination](#methods_combination)
 
-<style scoped>
-table {
-  font-size: 13px;
-}
-</style>
 
 ## 1. Retrieval Detection <a id="retrieval_detect"></a>
 
