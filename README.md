@@ -10,21 +10,17 @@ The retrieval-augmented generation (RAG) is to combine the merits of retrieval s
     <p><b>The Framework for RAG System</b></p>
 </div>
 
-<style>
-td,th {
-  font-size: 14px
-}
-</style>
+
 
 Typically, the rag system consists of a set of modules, where each task are described as follows:
 
-|         **Sub-Tasks**         |     **Input**     |  **Output**  |
-| :---------------------------------: | :----------------------: | :----------------: |
-|  [query understanding](./rewriter.md)  |         question         |   search queries   |
-|   [document retrieval](./ranker.md)   |     question/queries     | documents/passages |
-| [evidence extraction](./compressor.md) |   questions+documents   |      contexts      |
-|  [answer generation](./generator.md)  |    question+contexts    |       answer       |
-|  [result enhancement](./validator.md)  | question+answer+contexts |       answer       |
+|         **Components**         |     **Input**     |  **Output**  | **Tasks**         | 
+| :---------------------------------: | :----------------------: | :----------------: |:----------------: |
+|  [query understanding](./rewriter.md)  |         question         |   search queries   | <sub>Query performance prediction, Query (intent) classification, Query expasion, et al. </sub>| 
+|   [retrieval](./ranker.md)   |     question/queries     | documents/passages | <sub>Ad-hoc retrieval, Document retrieval, Passage retrieval, et al.</sub>| 
+| [evidence extraction](./compressor.md) |   questions+documents   |      contexts      | <sub>Re-ranking, Context compression, et al.</sub> | 
+|  [generation](./generator.md)  |    question+contexts    |       answer       | <sub>Question answering, summarization, et al.</sub> | 
+|  [result enhancement](./validator.md)  | question+answer+contexts |       answer       | <sub>Claim verification, Attribution, et al.</sub>  | 
 
 ### Healthcheck
 
