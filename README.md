@@ -10,6 +10,12 @@ The retrieval-augmented generation (RAG) is to combine the merits of retrieval s
     <p><b>The Framework for RAG System</b></p>
 </div>
 
+<style>
+td,th {
+  font-size: 14px
+}
+</style>
+
 Typically, the rag system consists of a set of modules, where each task are described as follows:
 
 |         **Sub-Tasks**         |     **Input**     |  **Output**  |
