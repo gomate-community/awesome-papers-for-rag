@@ -16,11 +16,11 @@ Typically, the rag system consists of a set of modules, where each task are desc
 
 |         **Components**         |     **Input**     |  **Output**  | **Tasks**         | 
 | :---------------------------------: | :----------------------: | :----------------: |:----------------: |
-|  [query understanding](./rewriter.md)  |         question         |   search queries   | <sub>Query performance prediction, Query (intent) classification, Query expasion, et al. </sub>| 
-|   [retrieval](./ranker.md)   |     question/queries     | documents/passages | <sub>Ad-hoc retrieval, Document retrieval, Passage retrieval, et al.</sub>| 
-| [evidence extraction](./compressor.md) |   questions+documents   |      contexts      | <sub>Re-ranking, Context compression, et al.</sub> | 
-|  [generation](./generator.md)  |    question+contexts    |       answer       | <sub>Question answering, summarization, et al.</sub> | 
-|  [result enhancement](./validator.md)  | question+answer+contexts |       answer       | <sub>Claim verification, Attribution, et al.</sub>  | 
+|  [Query understanding](./rewriter.md)  |         question         |   search queries   | <sub>Query performance prediction, Query (intent) classification, Query expasion, et al. </sub>| 
+|   [Retrieval](./ranker.md)   |     question/queries     | documents/passages | <sub>Ad-hoc retrieval, Document retrieval, Passage retrieval, et al.</sub>| 
+| [Mediation](./mediation.md) |   questions+documents   |      contexts      | <sub>Re-ranking, Context compression, post-retrieval, et al.</sub> | 
+|  [Generation](./generator.md)  |    question+contexts    |       answer       | <sub>Question answering, summarization, et al.</sub> | 
+|  [Result enhancement](./validator.md)  | question+answer+contexts |       answer       | <sub>Claim verification, Attribution, et al.</sub>  | 
 
 ### Healthcheck
 

@@ -21,8 +21,6 @@ Coming soon ...
 - [Datasets](#datasets)
   - [Factoid QA](#fqa)
   - [Long-form QA](#lfqa)
-- [Evaluation](#metrics)
-  - [Claim Verification](#claimverification)
 
 
 
@@ -53,10 +51,3 @@ Coming soon ...
 
 ### 3.4 Long-form QA <a id="lfqa"></a>
 
-## 4. Metrics <a id="metrics"></a>
-
-### 4.1 Claim Verification <a id="claimverification"></a>
-
-| Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
-|------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-|2024/02/23 |[Merging Facts, Crafting Fallacies: Evaluating the Contradictory Nature of Aggregated Factual Claims in Long-Form Generations](https://arxiv.org/abs/2402.05629.pdf)| heng-Han Chiang, Hung-yi Lee.|National Taiwan University|<details><summary><small>This paper presents D-FActScore ...</small></summary><small>This work finds that combining factual claims together can result in a non-factual paragraph due to entity ambiguity. Current metrics for fact verification fail to properly evaluate these non-factual passages. The authors proposed D-FActScore based on FActScore, and showed the methods and results of human and automatic evaluation.</small></details>|
