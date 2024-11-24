@@ -1,6 +1,6 @@
-# Awesome resources about rank component in the RAG system
+# Awesome resources about retrieval component in the RAG system
 
-🔥 **Must-read papers for rank component in RAG.**
+🔥 **Must-read papers for retrieval component in RAG.**
 
 🌟 **We greatly appreciate any contributions via PRs, issues, emails, or other methods.**
 
@@ -14,7 +14,7 @@ Coming soon ...
 
 
 - [Retrieval Methods](#retrieval)
-  - [Tuning Embeddings](#tunembedding)
+  - [Two-tower Retriever (Tuning Embeddings)](#tunembedding)
   - [Adapting LLM as Retriever](#aligning)
   - [LLM-guided Retriever](#llm-guided-retriever)
   - [Structured Retriever](#structured-retriever)
@@ -27,7 +27,7 @@ Coming soon ...
 
 ## 1. Retrieval Methods <a id="retrieval"></a>
 
-### 1.1 Tuning Embeddings <a id="tunembedding"></a>
+### 1.1 Two-tower Retriever (Tuning Embeddings) <a id="tunembedding"></a>
 
 | Date       | Title                                                                                                           | Authors                                  | Orgnization                                                                                                   | Abs                                                                                             |
 |------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -61,11 +61,8 @@ Coming soon ...
 |------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 |2024/03/27| [LLatrieval: LLM-Verified Retrieval for Verifiable Generation](https://arxiv.org/pdf/2311.07838.pdf)<br>[[code](https://github.com/BeastyZ/LLM-Verified-Retrieval): ![](https://img.shields.io/github/stars/BeastyZ/LLM-Verified-Retrieval.svg?style=social))]| Xiaonan Li, Changtai Zhu, Linyang Li, et. al.| Fudan University | <details><summary><small>This paper presents LLatrieval ...</small></summary><small>This work proposes **LLatrieval** (LLM-verified Retrieval), where the LLM iteratively provides feedback to the retrieval through verify-update iterations. 1) **Retrieval Verification** is implemented by prompting LLM to give binary label, and 2) **Retrieval Update** takes LLM to progressively scan the document candidates returned by the retriever and selects the supporting documents.</small></details>|
 |2024/3/15 | [DRAGIN: Dynamic Retrieval Augmented Generation based on the Real-time Information Needs of Large Language Models](https://arxiv.org/abs/2403.10081) <br>[[code](https://github.com/oneal2000/DRAGIN): ![](https://img.shields.io/github/stars/oneal2000/DRAGIN.svg?style=social)] | Weihang Su, Yichen Tang, Qingyao Ai, Zhijing Wu, Yiqun Liu|  Tsinghua University, Beijing Institute of Technology| <details><summary><small>This paper presents DRAGIN ...</small></summary><small>This work introduce a new framework, **DRAGIN**, i.e., Dynamic Retrieval Augmented Generation based on the real-time Information Needs of LLMs. This framework is specifically designed to make decisions on when and what to retrieve based on the LLM’s real-time information needs during the text generation process.</small></details>|
-|2023/10/23 | [Enhancing Retrieval-Augmented Large Language Models with Iterative Retrieval-Generation Synergy](https://arxiv.org/pdf/2305.15294.pdf) | Zhihong Shao, Yeyun Gong, yelong shen, Minlie Huang, et. al.| Tsinghua University, Microsoft Research Asia| <details><summary><small>This paper presents ITER-RETGEN ...</small></summary><small>This work propose **ITER-RETGEN**, which iterates retrieval-augmented generation and generation-augmented retrieval. Besides, they find that exact match can significantly underestimate the performance of LLMs, and using LLMs to evaluate is more reliable.</small></details>|
-|2023/10/08 | [Retrieval-Generation Synergy Augmented Large Language Models](https://arxiv.org/pdf/2310.05149.pdf) | Zhangyin Feng, Xiaocheng Feng, Dezhi Zhao, Maojin Yang, Bing Qin| Harbin Institute of Technology| <details><summary><small>This paper presents ITRG ...</small></summary><small>This work propose **ITRG**, which contains two steps: 1) generation augmented retrieval (GAR) to expand the query based on previous iteration to help retrieve, 2) retrieval augmented generation (RAG) to generate new document to answer questions based on retrieved documents.</small></details>|
-|2023/6/22 | [Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions](https://arxiv.org/abs/2212.10509) <br>[[code](https://github.com/stonybrooknlp/ircot): ![](https://img.shields.io/github/stars/stonybrooknlp/ircot.svg?style=social)] | Harsh Trivedi, Niranjan Balasubramanian, Tushar Khot, Ashish Sabharwal| Stony Brook University, Allen Institute for AI| <details><summary><small>This paper presents IRCoT ...</small></summary><small>This work propose **IRCoT**, which interleaves CoT generation and retrieval steps to guid the retrieval by CoT and vice-versa. Two steps: 1) reason step generates next CoT sentence based on question, retrieved passage, and CoT sentences; 2) retrieval step retrieves K more passages based on the last CoT sentence.</small></details>|
 |2023/5/26| [Augmentation-Adapted Retriever Improves Generalization of Language Models as Generic Plug-In](https://arxiv.org/abs/2305.17331.pdf) <br> [[code](https://github.com/OpenMatch/Augmentation-Adapted-Retriever): ![](https://img.shields.io/github/stars/OpenMatch/Augmentation-Adapted-Retriever.svg?style=social)] |Zichun Yu, Chenyan Xiong, Shi Yu, Zhiyuan Liu|Tsinghua University, Microsoft|<details><summary><small>This paper presents AAR ...</small></summary><small>This work introduce augmentation-adapted retriever (AAR), which takes a black-box LLM to score positive documents (so called LLM-preferred signals) for fine-tuning a pre-trained retriever.</small></details>|
-|2022/11/16| [Atlas: Few-shot Learning with Retrieval Augmented Language Models](https://arxiv.org/abs/2208.03299.pdf)<br> [[code](https://github.com/facebookresearch/atlas): ![](https://img.shields.io/github/stars/facebookresearch/atlas.svg?style=social)]|Gautier Izacard, Patrick Lewis, Maria Lomeli, et. al.|Meta AI, ENS, PSL University, Inria, UCL|<details><summary><small>This paper presents Atlas ...</small></summary><small>This work present Atlas, a retrieval (Contriever) augmented language model (T5) by carefully designed training, i.e., 1) jointly pre-train the retriever and LLM using unsupervised output, 2) efficient retriever fine-tuning (including full index update, reranking, and query-side fine-tuning).</small></details>|
+
 
 ### 1.4 Structured Retriever <a id="structured-retriever"></a>
 | Date       | Title  | Authors  | Orgnization  | Abs |
