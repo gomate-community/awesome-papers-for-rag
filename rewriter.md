@@ -1,13 +1,13 @@
 # Awesome resources about intent understanding component in the RAG system
 
-🔥 **Must-read papers for intent understanding component in RAG.**
+🔥 **Must-read papers for intent clarify component in RAG.**
 
 🌟 **We greatly appreciate any contributions via PRs, issues, emails, or other methods.**
 
 
 ## Introduction
 
-The intent understanding component is to understand the question, and guide the retrieval to obtain better documents. Usually, there could be different types of understanding, e.g., whether to retrieve and query formulations.
+The intent clarify component is to understand the question, and guide the retrieval to obtain better documents. Usually, there could be different types of understanding, e.g., whether to retrieve and query formulations.
 
 
 ## Table of Content (ToC)
