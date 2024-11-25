@@ -15,7 +15,7 @@ Coming soon ...
 
 - [Retrieval Methods](#retrieval)
   - [Two-tower Retriever (Tuning Embeddings)](#tunembedding)
-  - [Adapting LLM as Retriever](#aligning)
+  - [LLM-based Retriever](#aligning)
   - [LLM-guided Retriever](#llm-guided-retriever)
   - [Structured Retriever](#structured-retriever)
 
@@ -44,7 +44,7 @@ Coming soon ...
 |2020/2/1| [REALM: Retrieval-Augmented Language Model Pre-Training](https://arxiv.org/abs/2002.08909)|Kelvin Guu, Kenton Lee, Zora Tung, et. al.|Google Research|<details><summary><small>This paper presents REALM ...</small></summary><small>This work jointly finetunes the retriever with a sequence-to-sequence model.</small></details>| <sub></sub>|
 -->
 
-### 1.2 Adapting LLM as Retriever<a id="aligning"></a>
+### 1.2 LLM-based Retriever<a id="aligning"></a>
 
 | Date       | Title | Authors   | Orgnization | Abs    | Dataset                                                                                           |
 |------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
