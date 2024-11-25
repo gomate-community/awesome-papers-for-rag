@@ -5,7 +5,7 @@ A curated list of resources dedicated to retrieval-augmented generation (RAG).
 The retrieval-augmented generation (RAG) is to combine the merits of retrieval system and llm to generation high-quality answers for users.
 
 <div align="center">
-    <img width="800" src="./rag1.png" alt="RAG Framework">
+    <img width="800" src="./images/rag1.png" alt="RAG Framework">
     <br><br>
     <p><b>The Framework for RAG System</b></p>
 </div>
