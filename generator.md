@@ -15,9 +15,10 @@ Coming soon ...
 ## Table of Content (ToC)
 
 
-- [Instruction Fine-tuning](#ift)
+- [Generation Ability Enhance](#ift)
   - [Knowledge Enhance](#otm)
   - [Attribution Enhance](#attribution)
+  - [Long-context Enhance](#attribution)
 - [Hallucinations](#hallucination)
 - [Datasets](#datasets)
   - [Factoid QA](#fqa)
@@ -42,6 +43,12 @@ Coming soon ...
 |------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 |2024/08/20 | [INSTRUCTRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales](https://arxiv.org/pdf/2406.13629) [[code](https://github.com/weizhepei/InstructRAG): ![](https://img.shields.io/github/stars/weizhepei/InstructRAG.svg?style=social)] | Zhepei Wei, Wei-Lin Chen, Yu Meng | University of Virginia | <details><summary><small>This paper presents InstructRAG ...</small></summary><small>This work proposes InstructRAG to generate rationales along with the answer, enhancing both the generation accuracy and trustworthiness. It first prompt an instruction-tuned LLM (rational generator) to synthesize rationales, which is to explain how to derive correct answer from noisy retrieved documents. Then, it guid the LM to learn explict denoising by leveraging these rationals as either in-context learning demonstrations or as supervised fine-tuning data.</small></details>|<sub>PopQA, TriviaQA, NQ, ASQA, 2WikiMHQA </sub>|
 |2024/03/04 | [Citation-Enhanced Generation for LLM-based Chatbots](https://arxiv.org/pdf/2402.16063) | Weitao Li, Junkai Li, Weizhi Ma, Yang Liu | Tsinghua University | <details><summary><small>This paper presents CEG ...</small></summary><small>This work proposes a post-hoc Citation-Enhanced Generation (CEG) approach combined with RAG. It consists of three components: 1) *Retrieval Augmentation Module* uses NLTK as sentence tokenizer to obtain claims, then uses dense retrieval (SimCSE Bert) to retrieve documents; 2) *Citation Generation Module* first uses NLI model to determine the relationship between each claim-document pair to select valid reference for each claim; 3) *Response Regeneration Module* takes the question, original response, nonfactual claims, and relevant docs, as prompt input to regenerate the new response.</small></details>|<sub>WikiBio GPT-3, FELM, HaluEval, WikiRetr </sub>|
+
+### 1.3 Long-context Enhance <a id="attribution"></a>
+| Date       | Title | Authors   | Orgnization | Abs    | Dataset                                                                                           |
+|------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+|2024/07/11 | [LLM Maybe LongLM: SelfExtend LLM Context Window Without Tuning](https://arxiv.org/pdf/2401.01325) [[code](https://github.com/datamllab/LongLM): ![](https://img.shields.io/github/stars/datamllab/LongLM.svg?style=social)] | ZHongye Jin, Xiaotian Han, Jingfeng Yang, et. al. | Texas A&M University | <details><summary><small>This paper presents SelfExtend ...</small></summary><small>SelfExtend extend the context window of LLMs by construncting bi-level attention information without fine-tuning: 1) The grouped attention captures the dependencies amongo tokens that are far apart; 2) The neighbor attention captures dependencies among adjacent tokens within a specified range</small></details>|<sub>LongBench, L-Eval </sub>|
+
 
 ## 2. Haullucinations <a id="hallucinations"></a>
 
