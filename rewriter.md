@@ -12,7 +12,7 @@ The intent clarify component is to understand the question, and guide the retrie
 
 ## Table of Content (ToC)
 
-- [Retrieval Detection](#retrieval_detect)
+- [Retrieval Detection](#retrieval_detect): determine whether to retrieve content for response generation or directly generate the response.
 - [Query Reformulation](#query_reformulate)
 - [Query Expansion](#retrieval_expansion)
   - [Generative-Relevance Feedback](#GRF)
