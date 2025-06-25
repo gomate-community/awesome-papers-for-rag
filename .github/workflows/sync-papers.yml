@@ -18,8 +18,7 @@ jobs:
         with:
           repository: gomate-community/gomate-community.github.io
           path: gomate-community.github.io 
-          token: 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
-          ### ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GHTOKEN }}
 
       - name: Sync files
         run: |
