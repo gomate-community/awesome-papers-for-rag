@@ -18,7 +18,7 @@ jobs:
         with:
           repository: gomate-community/gomate-community.github.io
           path: gomate-community.github.io 
-          token: ${{ env.secrets.GHTOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Sync files
         run: |
@@ -42,8 +42,8 @@ jobs:
             echo "No changes to commit."
           else
             # 确保在当前仓库内设置了提交者信息
-            git config user.email "fanyixing111@hotmail.com"
-            git config user.name "faneshion"
+            git config user.email ${{ secrets.USER_EMAIL }}
+            git config user.name ${{ secrets.USER_NAME }}
 
             git commit -m "Sync _pages/awesome-papers-for-rag from awesome-papers-for-rag [auto]"
             # 由于前面的 actions/checkout 已经用 token 配置了远程，这里直接 push 即可
