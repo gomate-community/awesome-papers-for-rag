@@ -16,10 +16,10 @@ jobs:
       - name: Checkout target repo (gomate-community.github.io)
         uses: actions/checkout@v3
         with:
-          repository: gomate-community/gomate-community.github.io # 明确指定目标仓库
-          path: gomate-community.github.io # 克隆到此目
-          # Optional: Configure author for commits made from this checkout
-          token: ${{ secrets.GH_TOKEN }}
+          repository: gomate-community/gomate-community.github.io
+          path: gomate-community.github.io 
+          token: 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
+          ### ${{ secrets.GH_TOKEN }}
 
       - name: Sync files
         run: |
