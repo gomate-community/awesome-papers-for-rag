@@ -9,44 +9,37 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout awesome-papers-for-rag (Source Repo)
-        uses: actions/checkout@v3 # 这是您的源仓库
-
-      # --- 关键点：使用 actions/checkout 克隆目标仓库，并明确传递令牌 ---
-      - name: Checkout target repo (gomate-community.github.io)
+      - name: Checkout awesome-papers-for-rag
         uses: actions/checkout@v3
-        with:
-          repository: gomate-community/gomate-community.github.io
-          path: gomate-community.github.io 
-          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.email ${{ secrets.USER_EMAIL }}
+          git config --global user.name ${{ secrets.USER_NAME }}
+          
+      - name: Clone target repo (gomate-community.github.io)
+        run: |
+          git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git gomate-community.github.io
 
       - name: Sync files
         run: |
-          # 复制文件：从当前源仓库目录复制到克隆的目标仓库目录
-          cp README.md gomate-community.github.io/_pages/awesome-papers-for-rag/README.md
-          cp rewriter.md gomate-community.github.io/_pages/awesome-papers-for-rag/rewriter.md
-          cp ranker.md gomate-community.github.io/_pages/awesome-papers-for-rag/ranker.md
-          cp mediation.md gomate-community.github.io/_pages/awesome-papers-for-rag/mediation.md
-          cp generator.md gomate-community.github.io/_pages/awesome-papers-for-rag/generator.md
-          cp validator.md gomate-community.github.io/_pages/awesome-papers-for-rag/validator.md
-          cp evaluation.md gomate-community.github.io/_pages/awesome-papers-for-rag/evaluation.md
+          cp README.md gomate-community.github.io/_pages/awesome-papers-for-rag/README.md # 复制到 include_relative 预期的位置
+          cp rewriter.md gomate-community.github.io/_pages/awesome-papers-for-rag/rewriter.md # 复制到 include_relative 预期的位置
+          cp ranker.md gomate-community.github.io/_pages/awesome-papers-for-rag/ranker.md # 复制到 include_relative 预期的位置
+          cp mediation.md gomate-community.github.io/_pages/awesome-papers-for-rag/mediation.md # 复制到 include_relative 预期的位置
+          cp generator.md gomate-community.github.io/_pages/awesome-papers-for-rag/generator.md # 复制到 include_relative 预期的位置
+          cp validator.md gomate-community.github.io/_pages/awesome-papers-for-rag/validator.md # 复制到 include_relative 预期的位置
+          cp evaluation.md gomate-community.github.io/_pages/awesome-papers-for-rag/evaluation.md # 复制到 include_relative 预期的位置
           cp images/rag1.png gomate-community.github.io/assets/rag1.png
 
       - name: Commit & push changes
         run: |
-          cd gomate-community.github.io # 进入目标仓库的目录
+          cd gomate-community.github.io
           git add .
-
-          # 检查是否有需要提交的更改
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            # 确保在当前仓库内设置了提交者信息
-            git config user.email ${{ secrets.USER_EMAIL }}
-            git config user.name ${{ secrets.USER_NAME }}
-
             git commit -m "Sync _pages/awesome-papers-for-rag from awesome-papers-for-rag [auto]"
-            # 由于前面的 actions/checkout 已经用 token 配置了远程，这里直接 push 即可
             git push origin main
-            echo "Successfully synced files from awesome-papers-for-rag"
+            echo "Succeed in sync files from awesome-papers-from-rag"
           fi
