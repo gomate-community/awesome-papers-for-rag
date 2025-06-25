@@ -19,6 +19,8 @@ jobs:
       - name: Clone target repo (gomate-community.github.io)
         run: |
           git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git gomate-community.github.io
+          echo "TOKENS:\n"
+          echo https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git
 
 
 
