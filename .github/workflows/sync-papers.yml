@@ -18,7 +18,7 @@ jobs:
           git config --global user.name "faneshion"
       - name: Clone target repo (gomate-community.github.io)
         run: |
-          git clone https://x-access-token:${{ GITHUB_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git gomate-community.github.io
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git gomate-community.github.io
           
 
 
