@@ -31,7 +31,7 @@ jobs:
           cp generator.md gomate-community.github.io/_pages/awesome-papers-for-rag/generator.md # 复制到 include_relative 预期的位置
           cp validator.md gomate-community.github.io/_pages/awesome-papers-for-rag/validator.md # 复制到 include_relative 预期的位置
           cp evaluation.md gomate-community.github.io/_pages/awesome-papers-for-rag/evaluation.md # 复制到 include_relative 预期的位置
-          cp images/rag1.png gomate-community.github.io/assets/images/rag1.png
+          cp images/rag1.png gomate-community.github.io/assets/rag1.png
 
       - name: Commit & push changes
         run: |
