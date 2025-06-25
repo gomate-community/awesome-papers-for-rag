@@ -11,11 +11,6 @@ jobs:
     steps:
       - name: Checkout awesome-papers-for-rag
         uses: actions/checkout@v3
-
-      - name: Configure Git
-        run: |
-          git config --global user.email ${{ secrets.USER_EMAIL }}
-          git config --global user.name ${{ secrets.USER_NAME }}
           
       - name: Clone target repo (gomate-community.github.io)
         run: |
@@ -39,6 +34,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
+            git diff --cached
             git commit -m "Sync _pages/awesome-papers-for-rag from awesome-papers-for-rag [auto]"
             git push origin main
             echo "Succeed in sync files from awesome-papers-from-rag"
