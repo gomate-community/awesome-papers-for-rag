@@ -35,7 +35,7 @@ jobs:
 
       - name: Commit & push changes
         run: |
-          cd target-repo
+          cd gomate-community.github.io
           git add .
           if git diff --cached --quiet; then
             echo "No changes to commit."
