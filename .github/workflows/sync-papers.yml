@@ -17,11 +17,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: gomate-community/gomate-community.github.io # 明确指定目标仓库
-          path: gomate-community.github.io # 克隆到此目录
-          token: ${{ secrets.GH_TOKEN }} # <--- 再次强调：这是最关键的一行！
+          path: gomate-community.github.io # 克隆到此目
           # Optional: Configure author for commits made from this checkout
           user.email: "fanyixing111@hotmail.com" # 确保是您GitHub账户的邮箱
           user.name: "faneshion" # 确保是您GitHub账户的用户名
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Sync files
         run: |
