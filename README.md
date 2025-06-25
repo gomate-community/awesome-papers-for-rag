@@ -12,12 +12,12 @@ The retrieval-augmented generation (RAG) is to combine the merits of retrieval s
 
 
 Typically, the rag system consists of a set of modules, where each task are described as follows:
-1. [Interpreter](/papers/interpreter/): This component focuses on refining and enriching the user's initial query or question to improve the subsequent retrieval process. By generating more detailed or expanded search queries, it helps the retrieval component to more effectively recall relevant documents.
-2. [Retriever](/papers/retriever/): This component is responsible for finding and fetching relevant documents or passages from a large corpus based on the refined user query. It acts as the primary information access layer, providing the foundational knowledge for the generation phase. 
-3. [Compressor](/papers/compressor/): This component processes the retrieved documents and user questions to create an optimized context for LLM. It aims to refine, condense, and organize the retrieved information, ensuring that the most pertinent and concise context is passed on for accurate generation. 
-4. [Generator](/papers/generator/): This component leverages a LLM to synthesize a coherent, informative, and contextually relevant answer based on the user's question and the provided refined contexts. It transforms raw information into a human-readable response. 
-5. [Validator](/papers/validator/): This component aims to improve the trustworthiness and quality of the generated answer by validating its accuracy and adherence to factual information within the provided contexts. It ensures the output is reliable and grounded.
-6. [Evaluator](/papers/evaluator.md): This component measures the overall performance and quality of the RAG system, assessing various aspects such as answer accuracy, retrieval effectiveness, and generation faithfulness. It provides metrics to understand and improve the system's capabilities.
+1. [Interpreter](/papers/interpreter): This component focuses on refining and enriching the user's initial query or question to improve the subsequent retrieval process. By generating more detailed or expanded search queries, it helps the retrieval component to more effectively recall relevant documents.
+2. [Retriever](/papers/retriever): This component is responsible for finding and fetching relevant documents or passages from a large corpus based on the refined user query. It acts as the primary information access layer, providing the foundational knowledge for the generation phase. 
+3. [Compressor](/papers/compressor): This component processes the retrieved documents and user questions to create an optimized context for LLM. It aims to refine, condense, and organize the retrieved information, ensuring that the most pertinent and concise context is passed on for accurate generation. 
+4. [Generator](/papers/generator): This component leverages a LLM to synthesize a coherent, informative, and contextually relevant answer based on the user's question and the provided refined contexts. It transforms raw information into a human-readable response. 
+5. [Validator](/papers/validator): This component aims to improve the trustworthiness and quality of the generated answer by validating its accuracy and adherence to factual information within the provided contexts. It ensures the output is reliable and grounded.
+6. [Evaluator](/papers/evaluator): This component measures the overall performance and quality of the RAG system, assessing various aspects such as answer accuracy, retrieval effectiveness, and generation faithfulness. It provides metrics to understand and improve the system's capabilities.
 
 ## Surveys
 
