@@ -17,7 +17,7 @@ jobs:
         with:
           repository: gomate-community/gomate-community.github.io
           path: gomate-community.github.io # Clones into this directory
-          token: ${{ secrets.GH_TOKEN }} # <--- THIS IS KEY: Use your PAT secret here
+          token: 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
           # Optional: Configure user for commits made by this checkout
           # This sets the author of the commits made from this step
           user.email: "fanyixing111@hotmail.com" # Your GitHub email
