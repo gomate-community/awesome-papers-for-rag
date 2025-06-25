@@ -30,6 +30,8 @@ jobs:
       - name: Commit & push changes
         run: |
           cd gomate-community.github.io
+          git config --global user.email ${{ secrets.USER_EMAIL }}
+          git config --global user.name ${{ secrets.USER_NAME }}
           git add .
           if git diff --cached --quiet; then
             echo "No changes to commit."
