@@ -19,9 +19,6 @@ jobs:
           repository: gomate-community/gomate-community.github.io # 指定要克隆的目标仓库
           path: gomate-community.github.io # 将目标仓库克隆到此目录
           token: ${{ secrets.GH_TOKEN }} # <--- 这是最关键的一行，确保令牌被正确使用！
-          # 可选：为目标仓库的 Git 配置提交者信息
-          user.email: ${{ secrets.USER_EMAIL }} # 从秘密中读取邮箱
-          user.name: ${{ secrets.USER_NAME }}   # 从秘密中读取用户名
           # 如果您之前添加了其他参数，可以根据需要保留，但确保 token 参数存在
           # ssh-strict: true
           # persist-credentials: true
