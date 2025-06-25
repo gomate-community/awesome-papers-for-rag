@@ -14,8 +14,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
+          git config --global user.email "fanyixing111@hotmail.com"
+          git config --global user.name "faneshion"
       - name: Clone target repo (gomate-community.github.io)
         run: |
           git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git gomate-community.github.io
