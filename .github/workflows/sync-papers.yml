@@ -1,0 +1,46 @@
+name: Sync Papers and Components to Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout awesome-papers-for-rag
+        uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+      - name: Clone target repo (gomate-community.github.io)
+        run: |
+          git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git gomate-community.github.io
+
+
+
+      - name: Sync files
+        run: |
+          cp README.md gomate-community.github.io/_pages/awesome-papers-for-rag/README.md # 复制到 include_relative 预期的位置
+          cp rewriter.md gomate-community.github.io/_pages/awesome-papers-for-rag/rewriter.md # 复制到 include_relative 预期的位置
+          cp ranker.md gomate-community.github.io/_pages/awesome-papers-for-rag/ranker.md # 复制到 include_relative 预期的位置
+          cp mediation.md gomate-community.github.io/_pages/awesome-papers-for-rag/mediation.md # 复制到 include_relative 预期的位置
+          cp generator.md gomate-community.github.io/_pages/awesome-papers-for-rag/generator.md # 复制到 include_relative 预期的位置
+          cp validator.md gomate-community.github.io/_pages/awesome-papers-for-rag/validator.md # 复制到 include_relative 预期的位置
+          cp evaluation.md gomate-community.github.io/_pages/awesome-papers-for-rag/evaluation.md # 复制到 include_relative 预期的位置
+          cp images/rag1.png gomate-community.github.io/assets/images/rag1.png
+
+      - name: Commit & push changes
+        run: |
+          cd target-repo
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Sync _pages/awesome-papers-for-rag from awesome-papers-for-rag [auto]"
+            git push origin main
+            echo "Succeed in sync files from awesome-papers-from-rag"
+          fi
