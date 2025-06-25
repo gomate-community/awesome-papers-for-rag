@@ -1,24 +1,3 @@
-# Awesome resources about RAG evaluation
-
-🔥 **Must-read papers for evaluation in RAG.**
-
-🏃 **Coming soon: Add one-sentence intro to each paper.**
-
-🌟 **We greatly appreciate any contributions via PRs, issues, emails, or other methods.**
-
-
-
-
-
-## Table of Content (ToC)
-
-- [Survey papers](#survey)
-- [Evaluation Aspects](#aspect)
-	- [Short Answers](#short): Answers that are typically concise, often consisting of an entity or a short text span, e.g., "who is the president of USA?".
-	- [Long Answers](#long): Answers that are longer and more detailed, typically covering comprehensive explanations, reasoning, or descriptive content beyond simple entities or spans, e.g., “Explain the causes of the American Civil War”.
-	- [Contexts](#context): Content segments extracted from the ranked list, serving as the immediate information basis for answer generation.
-	- [Documents](#documents): The list of retrieved or ranked documents, from which contexts are selected and that provide broader source material for answering.
-- [Tools and Benchmarks](#datasets)
 
 ## 1. Survey papers <a id="survey"></a>
 
@@ -30,7 +9,7 @@
 
 
 ## 2 Evaluation papers <a id="short"></a>
-
+<br>
 
 ### 2.1 Short answer evaluation <a id="aspect"></a>
 
@@ -49,8 +28,8 @@
 | **Date** | **Title** | **Organization**  |  **Code**  |
 | :-----------: | :-------------: | :----------------------: |  :----------------------: |
 |2024/10/10|[HELMET: How to Evaluate Long-Context Language Models Effectively and Thoroughly](https://arxiv.org/pdf/2410.02694?)|Princeton|[Code](https://github.com/princeton-nlp/HELMET)<br>![](https://img.shields.io/github/stars/princeton-nlp/HELMET.svg?style=social)|
-|2024/08/16|[RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models](https://aclanthology.org/2024.acl-long.585)                               |                    NewsBreak                    |           [Code](https://github.com/ParticleMedia/RAGTruth) </br>![](https://img.shields.io/github/stars/ParticleMedia/RAGTruth.svg?style=social)           |
-|2024/08/16|[RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation](http://arxiv.org/abs/2408.08067)                               |                    Amazon                    |           [Code](https://github.com/amazon-science/RAGChecker) </br>![](https://img.shields.io/github/stars/amazon-science/RAGChecker.svg?style=social)           |
+|2024/08/16|[RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models](https://aclanthology.org/2024.acl-long.585)                               |                    NewsBreak                    |           [Code](https://github.com/ParticleMedia/RAGTruth) <br>![](https://img.shields.io/github/stars/ParticleMedia/RAGTruth.svg?style=social)           |
+|2024/08/16|[RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation](http://arxiv.org/abs/2408.08067)                               |                    Amazon                    |           [Code](https://github.com/amazon-science/RAGChecker) <br>![](https://img.shields.io/github/stars/amazon-science/RAGChecker.svg?style=social)           |
 |2024/04/21|[Evaluating Retrieval Quality in Retrieval-Augmented Generation](https://arxiv.org/pdf/2404.13781)|UMASS|No|
 |2024/04/08|[FaaF: Facts as a Function for the evaluation of generated text](https://arxiv.org/pdf/2403.03888)|IMMO Capital|[Code](https://github.com/vasiliskatr/faaf)<br>![](https://img.shields.io/github/stars/vasiliskatr/faaf.svg?style=social)|
 |2024/02/19|[CRUD-RAG: A Comprehensive Chinese Benchmark for Retrieval-Augmented Generation of Large Language Models](https://arxiv.org/abs/2401.17043)|University of Science and Technology of China|[Code](https://github.com/IAAR-Shanghai/CRUD_RAG)<br>![](https://img.shields.io/github/stars/IAAR-Shanghai/CRUD_RAG.svg?style=social)|

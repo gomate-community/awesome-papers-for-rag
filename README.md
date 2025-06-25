@@ -1,11 +1,10 @@
-# awesome-papers-for-rag
-
 A curated list of resources dedicated to retrieval-augmented generation (RAG).
 
 The retrieval-augmented generation (RAG) is to combine the merits of retrieval system and llm to generation high-quality answers for users.
 
+
 <div align="center">
-    <img width="800" src="./images/rag1.png" alt="RAG Framework">
+    <img width="800" src="/assets/rag1.png" alt="RAG Framework">
     <br><br>
     <p><b>The Framework for RAG System</b></p>
 </div>
@@ -13,41 +12,31 @@ The retrieval-augmented generation (RAG) is to combine the merits of retrieval s
 
 
 Typically, the rag system consists of a set of modules, where each task are described as follows:
+1. [Interpreter](/papers/interpreter/): This component focuses on refining and enriching the user's initial query or question to improve the subsequent retrieval process. By generating more detailed or expanded search queries, it helps the retrieval component to more effectively recall relevant documents.
+2. [Retriever](/papers/retriever/): This component is responsible for finding and fetching relevant documents or passages from a large corpus based on the refined user query. It acts as the primary information access layer, providing the foundational knowledge for the generation phase. 
+3. [Compressor](/papers/compressor/): This component processes the retrieved documents and user questions to create an optimized context for LLM. It aims to refine, condense, and organize the retrieved information, ensuring that the most pertinent and concise context is passed on for accurate generation. 
+4. [Generator](/papers/generator/): This component leverages a LLM to synthesize a coherent, informative, and contextually relevant answer based on the user's question and the provided refined contexts. It transforms raw information into a human-readable response. 
+5. [Validator](/papers/validator/): This component aims to improve the trustworthiness and quality of the generated answer by validating its accuracy and adherence to factual information within the provided contexts. It ensures the output is reliable and grounded.
+6. [Evaluator](/papers/evaluator.md): This component measures the overall performance and quality of the RAG system, assessing various aspects such as answer accuracy, retrieval effectiveness, and generation faithfulness. It provides metrics to understand and improve the system's capabilities.
 
-|         **Components**         |     **Input**     |  **Output**  | **Tasks**         | 
-| :---------------------------------: | :----------------------: | :----------------: |:----------------: |
-|  [Intent Clarify](./rewriter.md)  |         question         |   search queries   | <sub>Query performance prediction, Query (intent) classification, Query expasion, et al. </sub>| 
-|   [Retrieval](./ranker.md)   |     question/queries     | documents/passages | <sub>Ad-hoc retrieval, Document retrieval, Passage retrieval, et al.</sub>| 
-| [Mediation](./mediation.md) |   questions+documents   |      contexts      | <sub>Re-ranking, Context compression, post-retrieval, et al.</sub> | 
-|  [Generation](./generator.md)  |    question+contexts    |       answer       | <sub>Question answering, summarization, et al.</sub> | 
-|  [Result Enhancement](./validator.md)  | question+answer+contexts |       answer       | <sub>Claim verification, Attribution, et al.</sub>  | 
-|  [Evaluation](./evaluation.md)  | question+answer+contexts |      scores       | <sub>accuracy, faithfulness, et al.</sub>  | 
-
-### Healthcheck
-
-```python
-pip3 install -r requirements.txt
-python3 healthcheck.py
-```
-
-### Surveys for RAG
+## Surveys
 
 * The *Organization* column only record the organization of the first author.
 
 | **Date** |                                                                        **Title**                                                                        |          **Organization**          |                                                                   **Code**                                                                   |
 | :------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
-|   2024/09/16  |                              [Trustworthiness in Retrieval-Augmented Generation Systems: A Survey](https://arxiv.org/abs/2409.10102)                              |             Tsinghua University             |           [Code](https://github.com/smallporridge/TrustworthyRAG)`</br>`![](https://img.shields.io/github/stars/smallporridge/TrustworthyRAG.svg?style=social)           |
-|   2024/09/10   |                              [Graph Retrieval-Augmented Generation: A Survey](https://arxiv.org/abs/2408.08921)                              |             Peking University             |           [Code](https://github.com/pengboci/GraphRAG-Survey)`</br>`![](https://img.shields.io/github/stars/pengboci/GraphRAG-Survey.svg?style=social)           |
+|   2024/09/16  |                              [Trustworthiness in Retrieval-Augmented Generation Systems: A Survey](https://arxiv.org/abs/2409.10102)                              |             Tsinghua University             |           [Code](https://github.com/smallporridge/TrustworthyRAG)<br>![](https://img.shields.io/github/stars/smallporridge/TrustworthyRAG.svg?style=social)           |
+|   2024/09/10   |                              [Graph Retrieval-Augmented Generation: A Survey](https://arxiv.org/abs/2408.08921)                              |             Peking University             |           [Code](https://github.com/pengboci/GraphRAG-Survey)<br>![](https://img.shields.io/github/stars/pengboci/GraphRAG-Survey.svg?style=social)           |
 |   2024/07/13   |                              [Large Language Models and Future of Information Retrieval: Opportunities and Challenges](https://dl.acm.org/doi/pdf/10.1145/3626772.3657848)                              |      ChengXiang Zhai, UIUC             |  -        |
-|   2024/02/29   |                              [Retrieval-Augmented Generation for AI-Generated Content: A Survey](https://arxiv.org/abs/2402.19473)                              |             Peking University             |           [Code](https://github.com/hymie122/RAG-Survey)`</br>`![](https://img.shields.io/github/stars/hymie122/RAG-Survey.svg?style=social)           |
-|   2024/01/03   |                              [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)                              |             Tongji University             |       [Code](https://github.com/Tongji-KGLLM/RAG-Survey)`</br>`![](https://img.shields.io/github/stars/Tongji-KGLLM/RAG-Survey.svg?style=social)       |
+|   2024/02/29   |                              [Retrieval-Augmented Generation for AI-Generated Content: A Survey](https://arxiv.org/abs/2402.19473)                              |             Peking University             |           [Code](https://github.com/hymie122/RAG-Survey)<br>![](https://img.shields.io/github/stars/hymie122/RAG-Survey.svg?style=social)           |
+|   2024/01/03   |                              [Retrieval-Augmented Generation for Large Language Models: A Survey](https://arxiv.org/abs/2312.10997)                              |             Tongji University             |       [Code](https://github.com/Tongji-KGLLM/RAG-Survey)<br>![](https://img.shields.io/github/stars/Tongji-KGLLM/RAG-Survey.svg?style=social)       |
 |   2024/01/03   |                    [A Comprehensive Survey of Hallucination Mitigation Techniques in Large Language Models](https://arxiv.org/abs/2401.01313)                    |     Islamic University of Technology     |                                                                         No                                                                         |
 |   2023/12/07   | [Trends in Integration of Knowledge and Large Language Models: A Survey and Taxonomy of Methods, Benchmarks, and Applications](https://arxiv.org/abs/2311.05876) |      Harbin Institute of Technology      |                                                                         No                                                                         |
-|   2023/09/19   |                            [The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/abs/2309.07864)                            |              Fudan NLP Group              | [Code](https://github.com/WooooDyy/LLM-Agent-Paper-List)`</br>`![](https://img.shields.io/github/stars/WooooDyy/LLM-Agent-Paper-List.svg?style=social) |
-|   2023/08/14   |                                  [Large Language Models for Information Retrieval: A Survey](https://arxiv.org/abs/2308.07107)                                  |             Renmin University             |       [Code](https://github.com/RUC-NLPIR/LLM4IR-Survey)`</br>`![](https://img.shields.io/github/stars/RUC-NLPIR/LLM4IR-Survey.svg?style=social)       |
+|   2023/09/19   |                            [The Rise and Potential of Large Language Model Based Agents: A Survey](https://arxiv.org/abs/2309.07864)                            |              Fudan NLP Group              | [Code](https://github.com/WooooDyy/LLM-Agent-Paper-List)<br>![](https://img.shields.io/github/stars/WooooDyy/LLM-Agent-Paper-List.svg?style=social) |
+|   2023/08/14   |                                  [Large Language Models for Information Retrieval: A Survey](https://arxiv.org/abs/2308.07107)                                  |             Renmin University             |       [Code](https://github.com/RUC-NLPIR/LLM4IR-Survey)<br>![](https://img.shields.io/github/stars/RUC-NLPIR/LLM4IR-Survey.svg?style=social)       |
 |   2022/02/02   |                                       [A Survey on Retrieval-Augmented Text Generation](https://arxiv.org/abs/2202.01110)                                       | Nara Institute of Science and Techonology |                                                                         No                                                                         |
 
-### Systems for RAG
+## Systems
 
 * The *Organization* column only record the organization of the first author.
 
