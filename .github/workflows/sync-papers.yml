@@ -38,6 +38,7 @@ jobs:
           else
             git diff --cached
             git commit -m "Sync _pages/awesome-papers-for-rag from awesome-papers-for-rag [auto]"
+            git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git
             git push origin main
             echo "Succeed in sync files from awesome-papers-from-rag"
           fi
