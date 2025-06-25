@@ -9,36 +9,48 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout awesome-papers-for-rag
+      - name: Checkout awesome-papers-for-rag (Source Repo)
         uses: actions/checkout@v3
 
-      - name: Configure Git
-        run: |
-          git config --global user.email "fanyixing111@hotmail.com"
-          git config --global user.name "faneshion"
-      - name: Clone target repo (gomate-community.github.io)
-        run: |
-          git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git gomate-community.github.io
+      - name: Checkout target repo (gomate-community.github.io)
+        uses: actions/checkout@v3
+        with:
+          repository: gomate-community/gomate-community.github.io
+          path: gomate-community.github.io # Clones into this directory
+          token: ${{ secrets.GH_TOKEN }} # <--- THIS IS KEY: Use your PAT secret here
+          # Optional: Configure user for commits made by this checkout
+          # This sets the author of the commits made from this step
+          user.email: "fanyixing111@hotmail.com" # Your GitHub email
+          user.name: "faneshion" # Your GitHub username
 
       - name: Sync files
         run: |
-          cp README.md gomate-community.github.io/_pages/awesome-papers-for-rag/README.md # 复制到 include_relative 预期的位置
-          cp rewriter.md gomate-community.github.io/_pages/awesome-papers-for-rag/rewriter.md # 复制到 include_relative 预期的位置
-          cp ranker.md gomate-community.github.io/_pages/awesome-papers-for-rag/ranker.md # 复制到 include_relative 预期的位置
-          cp mediation.md gomate-community.github.io/_pages/awesome-papers-for-rag/mediation.md # 复制到 include_relative 预期的位置
-          cp generator.md gomate-community.github.io/_pages/awesome-papers-for-rag/generator.md # 复制到 include_relative 预期的位置
-          cp validator.md gomate-community.github.io/_pages/awesome-papers-for-rag/validator.md # 复制到 include_relative 预期的位置
-          cp evaluation.md gomate-community.github.io/_pages/awesome-papers-for-rag/evaluation.md # 复制到 include_relative 预期的位置
+          # Copy files from the source repo (awesome-papers-for-rag)
+          # to the cloned target repo (gomate-community.github.io)
+          cp README.md gomate-community.github.io/_pages/awesome-papers-for-rag/README.md
+          cp rewriter.md gomate-community.github.io/_pages/awesome-papers-for-rag/rewriter.md
+          cp ranker.md gomate-community.github.io/_pages/awesome-papers-for-rag/ranker.md
+          cp mediation.md gomate-community.github.io/_pages/awesome-papers-for-rag/mediation.md
+          cp generator.md gomate-community.github.io/_pages/awesome-papers-for-rag/generator.md
+          cp validator.md gomate-community.github.io/_pages/awesome-papers-for-rag/validator.md
+          cp evaluation.md gomate-community.github.io/_pages/awesome-papers-for-rag/evaluation.md
           cp images/rag1.png gomate-community.github.io/assets/rag1.png
 
       - name: Commit & push changes
         run: |
           cd gomate-community.github.io
           git add .
+
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
+            # These git config lines might be redundant if user.email/user.name are set in actions/checkout
+            # But it doesn't hurt to have them here as a fallback.
+            git config user.email "fanyixing111@hotmail.com"
+            git config user.name "faneshion"
+
             git commit -m "Sync _pages/awesome-papers-for-rag from awesome-papers-for-rag [auto]"
+            # The 'token' in actions/checkout@v3 handles the authentication for push
             git push origin main
-            echo "Succeed in sync files from awesome-papers-from-rag"
+            echo "Successfully synced files from awesome-papers-for-rag"
           fi
