@@ -18,7 +18,7 @@ jobs:
           git config --global user.name "faneshion"
       - name: Clone target repo (gomate-community.github.io)
         run: |
-          git clone https://x-access-token:${{ env.GH_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git gomate-community.github.io
+          git clone https://x-access-token:${{ GITHUB_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git gomate-community.github.io
           
 
 
@@ -41,7 +41,6 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Sync _pages/awesome-papers-for-rag from awesome-papers-for-rag [auto]"
-            git remote set-url origin https://x-access-token:${{ env.GH_TOKEN }}@github.com/gomate-community/gomate-community.github.io.git
             git push origin main
             echo "Succeed in sync files from awesome-papers-from-rag"
           fi
