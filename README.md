@@ -58,3 +58,11 @@ Typically, the rag system consists of a set of modules, where each task are desc
 |2022/06/01|[WebGPT: Browser-assisted question-answering with human feedback](https://arxiv.org/abs/2112.09332)|Open AI|No|
 
 
+## Deep Research
+
+* The *Organization* column only record the organization of the first author.
+
+| **Date** | **Title** | **Organization**  |  **Core Idea**  |
+| :-----------: | :-------------: | :----------------------: |  :----------------------: 
+|2025/10/20|[Enterprise Deep Research: Steerable MultiAgent Deep Research for Enterprise Analytics](https://arxiv.org/pdf/2510.17797)|Google|Enterprise Deep Research, [Code](https://github.com/lSalesforceAIResearch/enterprise-deep-research)<br>![](https://img.shields.io/github/stars/SalesforceAIResearch/enterprise-deep-research.svg?style=social)|
+|2025/07/21|[Deep Researcher with Test-Time Diffusion](https://arxiv.org/pdf/2507.16075)|Google|research report generation as a diffusion process|
