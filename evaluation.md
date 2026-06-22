@@ -27,6 +27,7 @@
 
 | **Date** | **Title** | **Organization**  |  **Code**  |
 | :-----------: | :-------------: | :----------------------: |  :----------------------: |
+|2025/06/02|[ESGenius: Benchmarking LLMs on Environmental, Social, and Governance (ESG) and Sustainability Knowledge](https://aclanthology.org/2025.emnlp-main.739/)|Nanyang Technological University|[Code](https://github.com/ANGEL-NTU/ESGenius)<br>![](https://img.shields.io/github/stars/ANGEL-NTU/ESGenius.svg?style=social)|
 |2024/10/10|[HELMET: How to Evaluate Long-Context Language Models Effectively and Thoroughly](https://arxiv.org/pdf/2410.02694?)|Princeton|[Code](https://github.com/princeton-nlp/HELMET)<br>![](https://img.shields.io/github/stars/princeton-nlp/HELMET.svg?style=social)|
 |2024/08/16|[RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models](https://aclanthology.org/2024.acl-long.585)                               |                    NewsBreak                    |           [Code](https://github.com/ParticleMedia/RAGTruth) <br>![](https://img.shields.io/github/stars/ParticleMedia/RAGTruth.svg?style=social)           |
 |2024/08/16|[RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation](http://arxiv.org/abs/2408.08067)                               |                    Amazon                    |           [Code](https://github.com/amazon-science/RAGChecker) <br>![](https://img.shields.io/github/stars/amazon-science/RAGChecker.svg?style=social)           |
