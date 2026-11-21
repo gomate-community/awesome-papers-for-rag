@@ -64,6 +64,7 @@ Typically, the rag system consists of a set of modules, where each task are desc
 
 | **Date** | **Title** | **Organization**  |  **Core Idea**  |
 | :-----------: | :-------------: | :----------------------: |  :----------------------: 
+|2026/10/16|[MultiAgent-OPD: End-to-End Training of Hierarchical Multi-Agent Systems with On-Policy Distillation](https://arxiv.org/abs/2610.23234)|Alibaba Group / Zhejiang University|Joint hierarchical search training with Searcher token distillation and outcome RL for the other roles|
 |2025/10/28|[Tongyi DeepResearch Technical Report](https://papers-pdfs.assets.alphaxiv.org/2510.24701v1.pdf)|Tongyi Lab @ Alibaba|Tongyi Deep Research, [Code](https://github.com/Alibaba-NLP/DeepResearch)<br>![](https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch.svg?style=social)|
 |2025/10/20|[Enterprise Deep Research: Steerable MultiAgent Deep Research for Enterprise Analytics](https://arxiv.org/pdf/2510.17797)|Google|Enterprise Deep Research, [Code](https://github.com/lSalesforceAIResearch/enterprise-deep-research)<br>![](https://img.shields.io/github/stars/SalesforceAIResearch/enterprise-deep-research.svg?style=social)|
 |2025/09/03|[DEEP RESEARCH AGENTS: A SYSTEMATIC EXAMINATION AND ROADMAP](https://arxiv.org/pdf/2506.18096)|University of Liverpool|survey [Code](https://github.com/ai-agents-2030/awesome-deep-research-agent)<br>![](https://img.shields.io/github/stars/ai-agents-2030/awesome-deep-research-agent.svg?style=social)|
